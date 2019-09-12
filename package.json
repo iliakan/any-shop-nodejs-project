@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Node.JS Course Materials",
   "scripts": {
+    "start": "node index.js",
     "test": "cross-env NODE_ENV=test mocha --no-warnings --reporter=reporter.js *module/*task/**/*.test.js",
     "test:local": "cross-env NODE_ENV=test node --no-warnings local.js",
     "lint": "eslint ."

@@ -1,7 +1,6 @@
 const Koa = require('koa');
 const uuid = require('uuid/v4');
 const Router = require('koa-router');
-const fs = require('fs');
 const handleMongooseValidationError = require('./libs/validationErrors');
 const mustBeAuthenticated = require('./libs/mustBeAuthenticated');
 const {recommendationsList} = require('./controllers/recommendations');
@@ -91,6 +90,9 @@ router.get('/messages', messageList);
 app.use(router.routes());
 
 // this for HTML5 history in browser
+const fs = require('fs');
+const path = require('path');
+
 const index = fs.readFileSync(path.join(__dirname, 'public/index.html'));
 app.use(async (ctx, next) => {
   if (!ctx.url.startsWith('/api')) {

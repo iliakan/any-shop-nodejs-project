@@ -43,11 +43,12 @@ const products = require('./products');
   for (const product of products) {
     await Product.create({
       title: product.title,
+      slug: product.slug,
       description: product.description,
       price: product.price,
       rating: product.rating,
       category: categoriesMap[product.category].id,
-      subcategory: categoriesMap[product.category].subcategories[product.subcategory],
+      subcategory: product.subcategory,
       images: product.images,
     });
   }

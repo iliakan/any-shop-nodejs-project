@@ -1,6 +1,7 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
+const transliterate = require('../fixtures/transliterate');
 
 const files = fs.readdirSync(path.join(__dirname, 'original_data'));
 
@@ -27,6 +28,7 @@ for (const file of files) {
   for (const product of items) {
     const category = product['Категория'];
     const subcategory = product['Подкатегория 2'];
+    const subcategorySlug = transliterate(subcategory.toLowerCase().replace(/ /g, '-'));
     
     categories[category] = categories[category] || new Set();
     categories[category].add(subcategory);
@@ -44,7 +46,8 @@ for (const file of files) {
       products.items.push({
         title,
         description: product['Описание'],
-        category, subcategory,
+        category,
+        subcategory: subcategorySlug,
         images: product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
         price: product['Цена'],
       });

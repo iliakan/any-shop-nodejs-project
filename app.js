@@ -5,7 +5,7 @@ const handleMongooseValidationError = require('./libs/validationErrors');
 const mustBeAuthenticated = require('./libs/mustBeAuthenticated');
 const {recommendationsList} = require('./controllers/recommendations');
 const {
-  productsBySubcategory, productsByQuery, productList, productById
+  productsBySubcategory, productsByQuery, productList, productBySlug
 } = require('./controllers/products');
 const {categoryList} = require('./controllers/categories');
 const {login} = require('./controllers/login');
@@ -70,7 +70,7 @@ router.use(async (ctx, next) => {
 router.get('/recommendations', recommendationsList);
 router.get('/categories', categoryList);
 router.get('/products', productsBySubcategory, productsByQuery, productList);
-router.get('/products/:id', productById);
+router.get('/products/:slug', productBySlug);
 
 router.post('/login', login);
 

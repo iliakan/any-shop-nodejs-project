@@ -6,6 +6,12 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  
+  slug: {
+    type: String,
+    required: true,
+    index: true,
+  },
 
   description: {
     type: String,
@@ -24,8 +30,9 @@ const productSchema = new mongoose.Schema({
   },
 
   subcategory: {
-    type: mongoose.Types.ObjectId,
+    type: String,
     required: true,
+    index: true,
   },
 
   images: [String],

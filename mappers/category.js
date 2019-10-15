@@ -5,6 +5,7 @@ module.exports = function mapCategory(category) {
     subcategories: category.subcategories.map((subcategory) => ({
       id: subcategory.id,
       title: subcategory.title,
+      slug: subcategory.slug,
     })),
   };
 };

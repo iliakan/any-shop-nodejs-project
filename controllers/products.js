@@ -27,15 +27,11 @@ module.exports.productList = async function productList(ctx, next) {
   ctx.body = {products: products.map(mapProduct)};
 };
 
-module.exports.productById = async function productById(ctx, next) {
-  if (!mongoose.Types.ObjectId.isValid(ctx.params.id)) {
-    ctx.throw(400, 'invalid product id');
-  }
-
-  const product = await Product.findById(ctx.params.id);
+module.exports.productBySlug = async function productById(ctx, next) {
+  const product = await Product.findOne({ slug: ctx.params.slug });
 
   if (!product) {
-    ctx.throw(404, `no product with ${ctx.params.id} id`);
+    ctx.throw(404, `no product with ${ctx.params.slug} slug`);
   }
 
   ctx.body = {product: mapProduct(product)};

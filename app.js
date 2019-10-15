@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const uuid = require('uuid/v4');
 const Router = require('koa-router');
+const fs = require('fs');
 const handleMongooseValidationError = require('./libs/validationErrors');
 const mustBeAuthenticated = require('./libs/mustBeAuthenticated');
 const {recommendationsList} = require('./controllers/recommendations');

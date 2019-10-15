@@ -89,4 +89,13 @@ router.get('/messages', messageList);
 
 app.use(router.routes());
 
+// this for HTML5 history in browser
+const index = fs.readFileSync(path.join(__dirname, 'public/index.html'));
+app.use(async (ctx, next) => {
+  if (!ctx.url.startsWith('/api')) {
+    ctx.set('content-type', 'text/html');
+    ctx.body = index;
+  }
+});
+
 module.exports = app;

@@ -1,0 +1,16 @@
+extends /layouts/main
+
+block append variables
+  - let headTitle = error.title || 'Страница не найдена'
+  - let layout_header_class = "main__header_center"
+
+block content
+  +b.error
+    +e('h1').type= headTitle
+    +e.code 404
+    +e.text
+      if error.info
+        p= error.info
+
+    +e.text
+      a(href="/") Перейти на главную страницу

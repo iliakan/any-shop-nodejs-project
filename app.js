@@ -2,7 +2,6 @@ const Koa = require('koa');
 const uuid = require('uuid/v4');
 const Router = require('koa-router');
 const handleMongooseValidationError = require('./libs/validationErrors');
-const mustBeAuthenticated = require('./libs/mustBeAuthenticated');
 const {recommendationsList} = require('./controllers/recommendations');
 const {
   productsBySubcategory, productsByQuery, productList, productBySlug
@@ -18,8 +17,8 @@ const Session = require('./models/Session');
 
 const app = new Koa();
 
-app.use(require('koa-bodyparser')());
 app.use(require('koa-static')('public'));
+app.use(require('koa-bodyparser')());
 
 app.use(async (ctx, next) => {
   try {

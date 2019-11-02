@@ -13,6 +13,7 @@ let LOWER_SINGLE = {
 
 let LOWER_MULTI = {
   "ье": "ie",
+  "ый": "iy",
   "ьё": "ie"
 };
 
@@ -28,6 +29,7 @@ let UPPER_SINGLE = {
 };
 let UPPER_MULTI = {
   "ЬЕ": "IE",
+  "ЫЙ": "IY",
   "ЬЁ": "IE"
 };
 
@@ -43,7 +45,7 @@ let MULTI_KEYS = Object.keys(Object.assign({}, LOWER_MULTI, UPPER_MULTI)).sort(f
 // Transliterate a string with russian/ukrainian characters
 function transliterate(str) {
   let reg = new RegExp(MULTI_KEYS.join('|') + '|\\w|.', 'g');
-  
+
   let result = "";
   let chars = str.match(reg) || "";
   for (let i = 0; i < chars.length; i++) {
@@ -59,7 +61,7 @@ function transliterate(str) {
       result += chars[i];
     }
   }
-  
+
   return result;
 }
 

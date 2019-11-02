@@ -1,7 +1,9 @@
 const Koa = require('koa');
-const uuid = require('uuid/v4');
+const config = require('./config');
+
 const Router = require('koa-router');
-const handleMongooseValidationError = require('./libs/validationErrors');
+
+/*
 const {recommendationsList} = require('./controllers/recommendations');
 const {
   productsBySubcategory, productsByQuery, productList, productBySlug
@@ -13,91 +15,36 @@ const {me} = require('./controllers/me');
 const {register, confirm} = require('./controllers/registration');
 const {checkout, getOrdersList} = require('./controllers/orders');
 const {messageList} = require('./controllers/messages');
-const Session = require('./models/Session');
+*/
 
 const app = new Koa();
-
-app.use(require('koa-static')('public'));
-app.use(require('koa-bodyparser')());
-
-app.use(async (ctx, next) => {
-  try {
-    await next();
-  } catch (err) {
-    if (err.status) {
-      ctx.status = err.status;
-      ctx.body = {error: err.message};
-    } else {
-      console.error(err);
-      ctx.status = 500;
-      ctx.body = {error: 'Internal server error'};
-    }
-  }
-});
-
-app.use((ctx, next) => {
-  ctx.login = async function(user) {
-    const token = uuid();
-    await Session.create({token, user, lastVisit: new Date()});
-
-    return token;
-  };
-
-  return next();
-});
+app.db = require('./libs/db');
+app.log = require('./libs/log')();
+app.use(require('koa-static')(config.publicRoot));
+require('./handlers/requestId')(app);
+require('./handlers/requestLog')(app);
+require('./handlers/nocache')(app);
+require('./handlers/error')(app);
 
 const router = new Router({prefix: '/api'});
+router.get('/orders/daily', async (ctx) => {
+  let orders = app.db.get('orders').value();
+  let ordersCountByDate = Object.create(null);
 
-router.use(async (ctx, next) => {
-  const header = ctx.request.get('Authorization');
-  if (!header) return next();
-
-  const token = header.split(' ')[1];
-  if (!token) return next();
-
-  const session = await Session.findOne({token}).populate('user');
-  if (!session) {
-    ctx.throw(401, 'Неверный аутентификационный токен');
+  for(let order of orders) {
+    console.log(order);
+    let dateStr = order.createdAt.toISOString().replace(/T.*/, '');
+    if (!ordersCountByDate[dateStr]) ordersCountByDate[dateStr] = 0;
+    ordersCountByDate[dateStr]++;
   }
-  session.lastVisit = new Date();
-  await session.save();
 
-  ctx.user = session.user;
-  return next();
+  console.log(ordersCountByDate);
+  ctx.body = orders;
 });
-
-router.get('/recommendations', recommendationsList);
-router.get('/categories', categoryList);
-router.get('/products', productsBySubcategory, productsByQuery, productList);
-router.get('/products/:slug', productBySlug);
-
-router.post('/login', login);
-
-router.get('/oauth/:provider', oauth);
-router.post('/oauth_callback', handleMongooseValidationError, oauthCallback);
-
-router.get('/me', mustBeAuthenticated, me);
-
-router.post('/register', handleMongooseValidationError, register);
-router.post('/confirm', confirm);
-
-router.get('/orders', mustBeAuthenticated, getOrdersList);
-router.post('/orders', mustBeAuthenticated, handleMongooseValidationError, checkout);
-
-router.get('/messages', messageList);
 
 app.use(router.routes());
 
-// this for HTML5 history in browser
-const fs = require('fs');
-const path = require('path');
+require('./handlers/jsonServer')(app);
 
-const index = fs.readFileSync(path.join(__dirname, 'public/index.html'));
-app.use(async (ctx, next) => {
-  if (!ctx.url.startsWith('/api')) {
-    ctx.set('content-type', 'text/html');
-    ctx.body = index;
-  }
-});
 
 module.exports = app;

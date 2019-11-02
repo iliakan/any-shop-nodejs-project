@@ -6,20 +6,18 @@ const transliterate = require('../libs/transliterate');
 const dataDir = path.resolve(__dirname, '../data');
 const files = fs.readdirSync(path.join(dataDir, 'original_data'));
 
-module.exports = async function() {
-  const categories = {/*
-  [title]: [...titles]
-*/
-  };
+const PRODUCTS_PER_CATEGORY_MAX = 10;
 
-  const products = {
-    items:  [/* {title, description, category, subcategory, images, price} */],
-    titles: new Set(),/*
-  [category]: {
-    [subcategory]: count,
-  },
-*/
-  };
+function makeSlug(str) {
+  return transliterate(str.toLowerCase().replace(/ /g, '-'));
+}
+
+module.exports = async function() {
+  const categories = [];
+
+  const productSlugSet = new Set();
+
+  const products = [];
 
   for (const file of files) {
     if (file[0] === '~') continue;
@@ -34,40 +32,50 @@ module.exports = async function() {
     const items = XLSX.utils.sheet_to_json(worksheet);
 
     for (const product of items) {
-      const category = product['Категория'];
-      const subcategory = product['Подкатегория 2'];
-      //const subcategorySlug = transliterate(subcategory.toLowerCase().replace(/ /g, '-'));
-
-      categories[category] = categories[category] || new Set();
-      categories[category].add(subcategory);
-      products[category] = products[category] || {};
-      products[category][subcategory] = products[category][subcategory] || 0;
+      // skip products w/o desc
+      if (!product['Описание']) continue;
 
       const title = product['Имя товара'];
+      const slug = makeSlug(title);
 
-      if (products.titles.has(title)) continue;
+      if (productSlugSet.has(slug)) continue;
+      productSlugSet.add(slug);
 
-      if (products[category][subcategory] < 10 && product['Описание']) {
-        products[category][subcategory]++;
+      const category = product['Категория'];
+      const subcategory = product['Подкатегория 2'];
+      const subcategorySlug = makeSlug(subcategory);
+      const categorySlug = makeSlug(category);
 
-        products.titles.add(title);
-
-        products.items.push({
-          title,
-          description: product['Описание'],
-          category,
-          subcategory: subcategory,
-          images:      product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
-          price:       parseInt(product['Цена'].replace(/\s/g, '').replace(',', '.')) // make price integer for simplicity
-        });
+      let categoryObj = categories.find(c => c.id === categorySlug);
+      if (!categoryObj) {
+        categoryObj = { id: categorySlug, title: category, children: [], count: 0 };
+        categories.push(categoryObj)
       }
+
+      let subcategoryObj = categoryObj.children.find(c => c.id === subcategorySlug);
+      if (!subcategoryObj) {
+        subcategoryObj = {id: subcategorySlug, title: subcategory, count: 0 };
+        categoryObj.children.push(subcategoryObj);
+      }
+
+      if (subcategoryObj.count === PRODUCTS_PER_CATEGORY_MAX) continue;
+
+      products.push({
+        id: slug,
+        title,
+        description: product['Описание'],
+        category: categorySlug,
+        subcategory: subcategorySlug,
+        images:      product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
+        price:       parseInt(product['Цена'].replace(/\s/g, '').replace(',', '.')) // make price integer for simplicity
+      });
+
+      subcategoryObj.count++;
+      categoryObj.count++;
     }
+
+    fs.writeFileSync(path.resolve(dataDir, 'db.json'), JSON.stringify({categories, products}, null, 2));
   }
 
-  Object.keys(categories).forEach(category => {
-    categories[category] = Array.from(categories[category]);
-  });
-
-  fs.writeFileSync(path.resolve(dataDir, 'categories.json'), JSON.stringify(categories, null, 2));
-  fs.writeFileSync(path.resolve(dataDir, 'products.json'), JSON.stringify(products.items, null, 2));
 };
+

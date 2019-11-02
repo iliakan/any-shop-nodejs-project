@@ -1,4 +1,4 @@
-const config = require('config');
+const config = require('../../config');
 const escapeHtml = require('escape-html');
 const path = require('path');
 
@@ -13,11 +13,11 @@ function renderError(ctx, err) {
   // don't pass just err, because for "stack too deep" errors it leads to logging problems
   let report = {
     message: err.message,
-    stack: err.stack,
-    errors: err.errors, // for validation errors
-    status: err.status,
+    stack:   err.stack,
+    errors:  err.errors, // for validation errors
+    status:  err.status,
     referer: ctx.get('referer'),
-    cookie: ctx.get('cookie')
+    cookie:  ctx.get('cookie')
   };
   if (!err.expose) { // dev error
     report.requestVerbose = ctx.request;
@@ -50,9 +50,9 @@ function renderError(ctx, err) {
         errors: errors
       };
     } else {
-      ctx.body = ctx.render(`${__dirname}/templates/400.pug`, {
-        useAbsoluteTemplatePath: true,
-        error: err
+      ctx.body = pug.renderFile(`${__dirname}/templates/400.pug`, {
+        basedir: config.projectRoot,
+        error:   err
       });
     }
 
@@ -71,7 +71,7 @@ function renderError(ctx, err) {
     if (preferredType === 'json') {
       ctx.body = {
         message: err.message,
-        stack: stack
+        stack:   stack
       };
       ctx.body.statusCode = err.statusCode || err.status;
     } else {
@@ -86,7 +86,7 @@ function renderError(ctx, err) {
 
   if (preferredType === 'json') {
     ctx.body = {
-      message: err.message,
+      message:    err.message,
       statusCode: err.status || err.statusCode
     };
     if (err.description) {
@@ -94,21 +94,20 @@ function renderError(ctx, err) {
     }
   } else {
     let templateName = [500, 400, 401, 404, 403].includes(ctx.status) ? ctx.status : 500;
-    ctx.body = ctx.render(`${__dirname}/templates/${templateName}.pug`, {
-      useAbsoluteTemplatePath: true,
-      error: err,
+    ctx.body = pug.renderFile(`${__dirname}/templates/${templateName}.pug`, {
+      basedir:      config.projectRoot,
+      error:        err,
       supportEmail: config.supportEmail,
-      requestId: ctx.requestId,
-      t
+      requestId:    ctx.requestId
     });
   }
 
 }
 
 
-exports.init = function(app) {
-
+module.exports = function(app) {
   app.use(async function(ctx, next) {
+
     ctx.renderError = err => renderError(ctx, err);
 
     try {
@@ -121,7 +120,7 @@ exports.init = function(app) {
       // so wrapHmvcMiddleware is of little use
       try {
         renderError(ctx, err);
-      } catch(renderErr) {
+      } catch (renderErr) {
         // could not render, maybe template not found or something
         ctx.status = 500;
         ctx.body = "Server render error";
@@ -130,6 +129,4 @@ exports.init = function(app) {
 
     }
   });
-
-
 };

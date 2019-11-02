@@ -6,3 +6,6 @@ process.on('uncaughtException', function(err) {
 });
 
 task('convertFixtures', require('./tasks/convertFixtures'));
+task('server', require('./tasks/server'));
+task('dev', require('./tasks/dev'));
+task('generateOrders', require('./tasks/generateOrders'));

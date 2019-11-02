@@ -1,8 +1,12 @@
+const path = require('path');
+
 module.exports = {
   server: {
     host: process.env.HOST || 'localhost',
-    port: process.env.PORT || 3001
+    port: process.env.PORT || 8080
   },
+  publicRoot: path.resolve(__dirname, '../course-js-frontend'),
+  projectRoot: __dirname,
   mongodb: {
     uri: (process.env.NODE_ENV === 'test')
       ? 'mongodb://localhost/any-shop-test'

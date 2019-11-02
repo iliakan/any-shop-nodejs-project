@@ -19,20 +19,24 @@ faker.seed(1);
 module.exports = async function() {
   let date = new Date(2019, 7);
   let id = 1;
-  while(date < Date.now()) {
+  while (date < Date.now()) {
     let ordersCount = Math.round(graph(id));
-    for(let j=0; j<ordersCount; j++) {
+    console.log(date, ordersCount);
+    for (let j = 0; j < ordersCount; j++) {
       let product = db.products[faker.random.number({max: db.products.length - 1})];
+      let count = faker.random.number({min: 1, max: (product.price > 10000) ? 1 : (10000 / product.price)});
+      let totalCost = count * product.price;
       let order = {
         id,
-        user: faker.name.firstName() + ' ' + faker.name.lastName(),
-        phone: faker.phone.phoneNumber(),
-        product: product.id,
-        count: faker.random.number({min: 1, max: (product.price > 10000) ? 1 : (10000 / product.price)}),
-        createdAt: date
+        user:      faker.name.firstName() + ' ' + faker.name.lastName(),
+        phone:     faker.phone.phoneNumber(),
+        product:   product.id,
+        count,
+        totalCost,
+        createdAt: new Date(date)
       };
       db.orders.push(order);
-      console.log(order);
+      // console.log(order);
     }
     id++;
     date.setDate(date.getDate() + 1);

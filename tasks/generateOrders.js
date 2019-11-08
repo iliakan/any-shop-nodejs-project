@@ -12,7 +12,7 @@ function graph(x) {
 
 const db = require(path.resolve(dataDir, 'db.json'));
 
-if (!db.orders) db.orders = [];
+db.orders = [];
 
 faker.seed(1);
 
@@ -21,18 +21,17 @@ module.exports = async function() {
   let id = 1;
   while (date < Date.now()) {
     let ordersCount = Math.round(graph(id));
-    console.log(date, ordersCount);
     for (let j = 0; j < ordersCount; j++) {
       let product = db.products[faker.random.number({max: db.products.length - 1})];
       let count = faker.random.number({min: 1, max: (product.price > 10000) ? 1 : (10000 / product.price)});
-      let totalCost = count * product.price;
+      let amount = count * product.price;
       let order = {
         id,
         user:      faker.name.firstName() + ' ' + faker.name.lastName(),
         phone:     faker.phone.phoneNumber(),
         product:   product.id,
         count,
-        totalCost,
+        amount,
         createdAt: new Date(date)
       };
       db.orders.push(order);

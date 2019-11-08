@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const config = require('./config');
 
-const Router = require('koa-router');
+const Router = require('@koa/router');
 
 /*
 const {recommendationsList} = require('./controllers/recommendations');
@@ -26,20 +26,33 @@ require('./handlers/requestLog')(app);
 require('./handlers/nocache')(app);
 require('./handlers/error')(app);
 
+// uncomment to enable CORS from anywhere
+// app.use(require('@koa/cors')({maxAge: 86400}));
+
 const router = new Router({prefix: '/api'});
-router.get('/orders/daily', async (ctx) => {
-  let orders = app.db.get('orders').value();
+router.get('/stats/orders/:field(count|amount)', async (ctx) => {
+  let orders = app.db.get('orders');
+  if (ctx.query.gte) {
+    orders = orders.filter(order => order.createdAt >= new Date(ctx.query.gte));
+  }
+  if (ctx.query.lte) {
+    orders = orders.filter(order => order.createdAt <= new Date(ctx.query.lte));
+  }
   let ordersCountByDate = Object.create(null);
 
   for(let order of orders) {
-    console.log(order);
+    // console.log(order);
     let dateStr = order.createdAt.toISOString().replace(/T.*/, '');
     if (!ordersCountByDate[dateStr]) ordersCountByDate[dateStr] = 0;
-    ordersCountByDate[dateStr]++;
+    if (ctx.params.field === 'count') {
+      ordersCountByDate[dateStr].count++;
+    } else {
+      ordersCountByDate[dateStr] += order.amount;
+    }
   }
 
-  console.log(ordersCountByDate);
-  ctx.body = orders;
+  // console.log(ordersCountByDate);
+  ctx.body = ordersCountByDate;
 });
 
 app.use(router.routes());

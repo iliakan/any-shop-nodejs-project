@@ -30,7 +30,7 @@ require('./handlers/error')(app);
 // app.use(require('@koa/cors')({maxAge: 86400}));
 
 const router = new Router({prefix: '/api'});
-router.get('/stats/orders/:field(count|amount)', async (ctx) => {
+router.get('/stats/:field(orders|sales|customers)', async (ctx) => {
   let orders = app.db.get('orders');
   if (ctx.query.gte) {
     orders = orders.filter(order => order.createdAt >= new Date(ctx.query.gte));
@@ -40,18 +40,30 @@ router.get('/stats/orders/:field(count|amount)', async (ctx) => {
   }
   let ordersCountByDate = Object.create(null);
 
+  let customersSet = new Set();
   for(let order of orders) {
     // console.log(order);
     let dateStr = order.createdAt.toISOString().replace(/T.*/, '');
     if (!ordersCountByDate[dateStr]) ordersCountByDate[dateStr] = 0;
-    if (ctx.params.field === 'count') {
-      ordersCountByDate[dateStr].count++;
-    } else {
-      ordersCountByDate[dateStr] += order.amount;
+    switch(ctx.params.field) {
+      case 'orders':
+        ordersCountByDate[dateStr]++;
+        break;
+      case 'sales':
+        ordersCountByDate[dateStr] += order.amount;
+        break;
+      case 'customers':
+        if (!customersSet.has(order.phone)) {
+          customersSet.add(order.phone);
+          ordersCountByDate[dateStr]++;
+        }
+        break;
+      default:
+        throw new Error("Must never happen");
     }
   }
 
-  // console.log(ordersCountByDate);
+  console.log(ordersCountByDate);
   ctx.body = ordersCountByDate;
 });
 

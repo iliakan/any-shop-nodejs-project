@@ -2,9 +2,11 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 const transliterate = require('../libs/transliterate');
-
+const faker = require('faker');
 const dataDir = path.resolve(__dirname, '../data');
 const files = fs.readdirSync(path.join(dataDir, 'original_data'));
+
+faker.seed(1);
 
 const PRODUCTS_PER_CATEGORY_MAX = 10;
 
@@ -64,10 +66,12 @@ module.exports = async function() {
         id: slug,
         title,
         description: product['Описание'],
+        quantity: faker.random.number({min: 1, max: 100 }),
         category: categorySlug,
         subcategory: subcategorySlug,
+        enabled: faker.random.number({min:1, max: 10}) === 10,
         images:      product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
-        price:       parseInt(product['Цена'].replace(/\s/g, '').replace(',', '.')) // make price integer for simplicity
+        price:       Math.round(product['Цена'].replace(/\s/g, '').replace(',', '.') / 60) // make price integer for simplicity
       });
 
       subcategoryObj.count++;

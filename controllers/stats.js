@@ -1,11 +1,16 @@
+// stats/orders?from=...&to=...
 module.exports = async (ctx) => {
   let orders = ctx.app.db.get('orders');
 
-  if (ctx.query.gte) {
-    orders = orders.filter(order => order.createdAt >= new Date(ctx.query.gte));
+  console.log(orders);
+
+  await new Promise(resolve => setTimeout(resolve, 2000))
+
+  if (ctx.query.from) {
+    orders = orders.filter(order => order.createdAt >= new Date(ctx.query.from));
   }
-  if (ctx.query.lte) {
-    orders = orders.filter(order => order.createdAt <= new Date(ctx.query.lte));
+  if (ctx.query.to) {
+    orders = orders.filter(order => order.createdAt <= new Date(ctx.query.to));
   }
   let ordersCountByDate = Object.create(null);
 

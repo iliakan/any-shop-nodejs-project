@@ -12,15 +12,9 @@ module.exports = async function() {
       NODE_ENV: process.env.NODE_ENV || "development"
     },
     args: ['server'],
-    nodeArgs:     process.env.NODE_DEBUG ? ['--inspect'] : [],
+    nodeArgs:     process.env.DEBUG ? ['--inspect'] : [],
     script:       "./node_modules/.bin/gulp",
     watch:        ["*"],
-    watchOptions: {
-      awaitWriteFinish: {
-        stabilityThreshold: 300,
-        pollInterval:       100
-      }
-    }
   });
 
   await new Promise(resolve => {});

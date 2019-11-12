@@ -3,7 +3,7 @@ const config = require('./config');
 const path = require('path');
 const send = require('koa-send');
 const Router = require('@koa/router');
-
+const Db = require('./libs/db');
 /*
 const {recommendationsList} = require('./controllers/recommendations');
 const {
@@ -19,7 +19,7 @@ const {messageList} = require('./controllers/messages');
 */
 
 const app = new Koa();
-app.db = require('./libs/db');
+app.db = new Db(path.join(__dirname, 'data/db.json'), path.join(__dirname, 'data/db.schemas.js'));
 app.log = require('./libs/log')();
 app.use(require('koa-static')(config.publicRoot));
 require('./handlers/requestId')(app);
@@ -31,7 +31,7 @@ require('./handlers/error')(app);
 // app.use(require('@koa/cors')({maxAge: 86400}));
 
 app.use(async (ctx, next) => {
-  if (!ctx.url.startsWith('/api') && !ctx.url.includes('.')) {
+  if (!ctx.url.includes('.')) {
     await send(ctx, 'index.html', {root: config.publicRoot});
   } else {
     await next();
@@ -39,11 +39,11 @@ app.use(async (ctx, next) => {
 });
 
 const router = new Router();
-router.get('/api/stats/:field(orders|sales|customers)', require('./controllers/api/stats'));
-
+router.get('/stats/:field(orders|sales|customers)', require('./controllers/stats'));
+router.use('/rest', require('./controllers/rest')(app.db));
 app.use(router.routes());
 
-require('./handlers/jsonServer')(app);
+// require('./handlers/jsonServer')(app);
 
 
 module.exports = app;

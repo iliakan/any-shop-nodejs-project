@@ -9,6 +9,7 @@ process.on('uncaughtException', function(err) {
 
 task('convertFixtures', require('./tasks/convertFixtures'));
 task('server', require('./tasks/server'));
+task('validateDb', require('./tasks/validateDb'));
 task('generateOrders', require('./tasks/generateOrders'));
 
 task('nodemon', require('./tasks/nodemon'));

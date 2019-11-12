@@ -1,6 +1,6 @@
 module.exports = function(db) {
   return async (ctx, next) => {
-    db.write();
+    db.save();
     await next();
   }
 };

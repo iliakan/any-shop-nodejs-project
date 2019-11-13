@@ -119,6 +119,7 @@ module.exports = (db, name, opts) => {
 
     results = results.filter(Boolean);
 
+
     for(let i = 0; i<processingChain.sortFields.length; i++) {
       let sortField = processingChain.sortFields[i];
       let order = processingChain.sortOrder[i] === 'desc' ? -1 : 1;
@@ -127,11 +128,14 @@ module.exports = (db, name, opts) => {
       results.sort((a, b) => getter(a) > getter(b) ? order: -order);
     }
 
-    if (processingChain.start) {
+    if (processingChain.start !== null) {
       results = results.slice(processingChain.start, processingChain.end == null ? results.length : processingChain.end);
       ctx.set('X-Total-Count', results.length);
       ctx.append('Access-Control-Expose-Headers', 'X-Total-Count');
     }
+
+    // before embedding copy objects, to avoid overwriting in db
+    results = results.map(_.cloneDeep);
 
     for(let embedField of processingChain.embed) {
       for(let result of results) {

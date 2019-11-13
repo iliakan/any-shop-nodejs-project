@@ -23,20 +23,25 @@ module.exports = async function() {
   while (date < Date.now()) {
     let ordersCount = Math.round(graph(id));
     for (let j = 0; j < ordersCount; j++) {
-      let product = db.products[faker.random.number({max: db.products.length - 1})];
-      let count = faker.random.number({min: 1, max: (product.price > 10000) ? 1 : (10000 / product.price)});
-      let amount = count * product.price;
+      let productsCount = faker.random.number({min: 1, max: 4});
+      let products = [];
+      let totalCost = 0;
+      for(let i=0; i < productsCount; i++) {
+        let product = db.products[faker.random.number({max: db.products.length - 1})];
+        let count = faker.random.number({min: 1, max: (product.price < 20) ? 3 : (product.price < 100) ? 2 : 1});
+        totalCost += count * product.price;
+        products.push({product: product.id, count});
+      }
 
       let order = {
         id,
-        product:   product.id,
-        count,
-        amount,
+        products,
+        totalCost,
         createdAt: new Date(date)
       };
 
       // 20% probability of an existing user to make the order again
-      if (faker.random.number({min:1, max: 5}) === 1) {
+      if (db.orders.length > 5 && faker.random.number({min:1, max: 5}) === 1) {
         let takeUserFromOrder = db.orders[faker.random.number({min: 0, max: db.orders.length - 1})];
         order.user = takeUserFromOrder.user;
         order.phone = takeUserFromOrder.phone;

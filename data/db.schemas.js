@@ -47,9 +47,24 @@ module.exports = [
     type:                 "object",
     properties:           {
       id:        {type: "string"},
-      product:   {type: "string"},
-      count:     {type: "number"},
-      amount:    {type: "number"},
+      products: {
+        // array of products: [ {product:..., count:...}, ... ]
+        type:                 "array",
+        items:                {
+          type: "object",
+          properties: {
+            product: {
+              type: "string",
+            },
+            count: {
+              type: "number"
+            }
+          },
+          required:             ["product", "count"],
+          additionalProperties: false
+        }
+      },
+      totalCost:    {type: "number"},
 //      createdAt: {type: "string", pattern: "^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d.\d{3}Z"},
       createdAt: {type: "string", format: "date-time"},
       user:      {type: "string"},

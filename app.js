@@ -19,7 +19,7 @@ const {messageList} = require('./controllers/messages');
 */
 
 const app = new Koa();
-app.db = new Db(path.join(__dirname, 'data/db.json'), path.join(__dirname, 'data/db.schemas.js'));
+app.context.db = new Db(path.join(__dirname, 'data/db.json'), path.join(__dirname, 'data/db.schemas.js'));
 app.log = require('./libs/log')();
 app.use(require('koa-static')(config.publicRoot));
 require('./handlers/requestId')(app);
@@ -31,19 +31,19 @@ require('./handlers/error')(app);
 // app.use(require('@koa/cors')({maxAge: 86400}));
 
 app.use(async (ctx, next) => {
-  if (!ctx.url.includes('.')) {
+  if (!ctx.url.includes('.') && !ctx.url.startsWith('/api')) {
     await send(ctx, 'index.html', {root: config.publicRoot});
   } else {
     await next();
   }
 });
 
-const router = new Router();
-router.get('/stats/:field(orders|sales|customers)', require('./controllers/stats'));
-router.use('/rest', require('./controllers/rest')(app.db));
+const router = new Router({prefix: '/api'});
+router.get('/dashboard/orders', require('./controllers/api/dashboard/orders'));
+router.get('/dashboard/sales', require('./controllers/api/dashboard/sales'));
+router.get('/dashboard/customers', require('./controllers/api/dashboard/customers'));
+router.get('/dashboard/bestsellers', require('./controllers/api/dashboard/bestsellers'));
+router.use('/rest', require('./controllers/api/rest')(app.context.db));
 app.use(router.routes());
-
-// require('./handlers/jsonServer')(app);
-
 
 module.exports = app;

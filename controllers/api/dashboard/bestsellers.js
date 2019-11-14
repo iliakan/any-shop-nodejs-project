@@ -4,6 +4,8 @@ const _ = require('lodash');
 // stats/orders?from=...&to=...
 module.exports = async (ctx) => {
 
+  await new Promise(resolve => setTimeout(resolve, 3000));
+
   let orders = getOrders(ctx.db, ctx.query);
 
   let products = Object.create(null); // product => (total count in all orders)

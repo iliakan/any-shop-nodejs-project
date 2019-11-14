@@ -1,4 +1,5 @@
 const getOrders = require('./lib/getOrders');
+const _ = require('lodash');
 
 // stats/orders?from=...&to=...
 module.exports = async (ctx) => {
@@ -20,12 +21,16 @@ module.exports = async (ctx) => {
   // get top 50 products
   let productsTop = Object.entries(products).sort((a, b) => b[1] - a[1]).slice(0, 50);
 
+  // sort by name these top 50 products
+  // (default sort order)
+  productsTop.sort((a, b) => a.title > b.title ? 1 : 0);
+
   let results = [];
   for(let [id, salesCount] of productsTop) {
-    let product = ctx.db.getById('products', id);
-    product.salesCount = salesCount;
-    product.subcategory = ctx.db.get('subcategory', product.subcategory)
-    product.category = ctx.db.get('category', product.category)
+    let product = _.cloneDeep(ctx.db.getById('products', id));
+    product.sales = salesCount;
+    product.subcategory = ctx.db.getById('subcategories', product.subcategory);
+    product.category = ctx.db.getById('categories', product.category);
     results.push(product);
   }
 

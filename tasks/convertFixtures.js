@@ -62,17 +62,24 @@ module.exports = async function() {
 
       if (subcategoryObj.count === PRODUCTS_PER_CATEGORY_MAX) continue;
 
-      products.push({
+      let productObj = {
         id:          slug,
         title,
         description: product['Описание'],
         quantity:    faker.random.number({min: 1, max: 100}),
         category:    categorySlug,
         subcategory: subcategorySlug,
-        enabled:     faker.random.number({min: 1, max: 10}) === 10,
+        status:     faker.random.number({min: 1, max: 10}) !== 10,
         images:      product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
-        price:       Math.round(product['Цена'].replace(/\s/g, '').replace(',', '.') / 60) // make price integer for simplicity
-      });
+        price:       Math.round(product['Цена'].replace(/\s/g, '').replace(',', '.') / 60), // make price integer for simplicity
+        discount: 0
+      };
+
+      if (productObj.price > 100 && faker.random.number({min: 1, max: 5}) === 1) {
+        productObj.discount = Math.round(productObj.price / 10);
+      }
+
+      products.push(productObj);
 
       subcategoryObj.count++;
       categoryObj.count++;
@@ -82,10 +89,10 @@ module.exports = async function() {
 
   // convert category.children to subcategories
   let subcategories = [];
-  for(let category of categories) {
+  for (let category of categories) {
     let children = category.children;
     delete category.children;
-    for(let subcategory of children) {
+    for (let subcategory of children) {
       subcategory.category = category.id;
       subcategories.push(subcategory);
     }

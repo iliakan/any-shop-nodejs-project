@@ -29,7 +29,7 @@ module.exports = async function() {
       for(let i=0; i < productsCount; i++) {
         let product = db.products[faker.random.number({max: db.products.length - 1})];
         let count = faker.random.number({min: 1, max: (product.price < 20) ? 3 : (product.price < 100) ? 2 : 1});
-        totalCost += count * product.price;
+        totalCost += count * (product.price - product.discount);
         products.push({product: product.id, count});
       }
 

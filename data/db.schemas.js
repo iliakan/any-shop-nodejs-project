@@ -30,7 +30,7 @@ module.exports = [
       quantity:    {type: "number"},
       category:    {type: "string"},
       subcategory: {type: "string"},
-      enabled:     {type: "boolean"},
+      status:     {type: "boolean"},
       images:      {
         type:  "array",
         items: {
@@ -38,7 +38,8 @@ module.exports = [
         },
         uniqueItems: true
       },
-      price:       {type: "number"}
+      price:       {type: "number"},
+      discount:       {type: "number"}
     },
     required:             ["id", "title", "description", "quantity", "category", "subcategory", "enabled", "images", "price"],
     additionalProperties: false

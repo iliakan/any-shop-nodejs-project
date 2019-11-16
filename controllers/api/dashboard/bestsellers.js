@@ -6,7 +6,7 @@ module.exports = async (ctx) => {
 
   await new Promise(resolve => setTimeout(resolve, 3000));
 
-  let orders = getOrders(ctx.db, ctx.query);
+  let orders = getOrders(ctx.db, {from: ctx.query.from, to: ctx.query.to});
 
   let products = Object.create(null); // product => (total count in all orders)
 
@@ -25,7 +25,13 @@ module.exports = async (ctx) => {
 
   // sort by name these top 50 products
   // (default sort order)
-  productsTop.sort((a, b) => a.title > b.title ? 1 : 0);
+  let sortField = ctx.query._sort || 'title';
+  let getter = db.createGetter(sortField);
+  let order = ctx.query._order === 'desc' ? -1 : 1;
+
+  productsTop.sort((a, b) =>
+    getter(a) > getter(b) ? order :
+      getter(a) == getter(b) ? 0 : -order);
 
   let results = [];
   for(let [id, salesCount] of productsTop) {

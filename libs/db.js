@@ -66,5 +66,29 @@ module.exports = class Db {
     return this.ajv.getSchema(`https://javascript.info/schemas/${name}.json`);
   }
 
+  // returns a function that gets required field from value, including subfields
+  // getter = createGetter('category')
+  // getter(product) // gets product.category
+  // getter = createGetter('category.name')
+  // getter(product) // gets product.category.name (finds category in db)
+  createGetter(field) {
+    // category.name -> ['category','name']
+    const parts = field.split('.');
+
+    return value => {
+      for (let i = 0; i < parts.length; i++) {
+        value = value[parts[i]]; // from product -> get product.category (id)
+        if (value === undefined) return undefined;
+        if (i < parts.length - 1) {
+          // we have category id, let's get category instead
+          let collection = this.get(pluralize(parts[i]));
+          value = collection.find(v => v.id == value);
+        }
+      }
+      return value;
+    };
+
+  }
+
 };
 

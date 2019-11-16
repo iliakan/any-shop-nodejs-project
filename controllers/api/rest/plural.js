@@ -17,31 +17,6 @@ module.exports = (db, name, opts) => {
     .delete('/:id', destroy, save(db))
     .routes();
 
-  // returns a function that gets required field from db
-  // getter = createGetter('category')
-  // getter(product) // gets product.category
-  // getter = createGetter('category.name')
-  // getter(product) // gets product.category.name (finds category in db)
-  function createGetter(field) {
-    // category.name -> ['category','name']
-    const parts = field.split('.');
-
-    return value => {
-      for (let i = 0; i < parts.length; i++) {
-        value = value[parts[i]]; // from product -> get product.category (id)
-        if (value === undefined) return undefined;
-        if (i < parts.length - 1) {
-          // we have category id, let's get category instead
-          let collection = db.get(pluralize(parts[i]));
-          value = collection.find(v => v.id == value);
-        }
-      }
-      return value;
-    };
-
-  }
-
-
   // GET /products
   // GET /products?category.name =  _lte=  _gte=  _ne=  _like=
   // GET /products?_start=1&_end=10
@@ -84,7 +59,7 @@ module.exports = (db, name, opts) => {
         operator = 'eq';
       }
 
-      let getter = createGetter(field);
+      let getter = db.createGetter(field);
       if (filters[operator]) {
         processingChain.filters.push(filters[operator].bind(null, value, getter));
       }
@@ -124,8 +99,11 @@ module.exports = (db, name, opts) => {
       let sortField = processingChain.sortFields[i];
       let order = processingChain.sortOrder[i] === 'desc' ? -1 : 1;
 
-      let getter = createGetter(sortField);
-      results.sort((a, b) => getter(a) > getter(b) ? order: -order);
+      let getter = db.createGetter(sortField);
+
+      results.sort((a, b) =>
+        getter(a) > getter(b) ? order :
+        getter(a) == getter(b) ? 0  : -order);
     }
 
     if (processingChain.start !== null) {

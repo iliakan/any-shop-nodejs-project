@@ -4,7 +4,7 @@ const _ = require('lodash');
 // stats/orders?from=...&to=...
 module.exports = async (ctx) => {
 
-  await new Promise(resolve => setTimeout(resolve, 3000));
+  // await new Promise(resolve => setTimeout(resolve, 3000));
 
   let orders = getOrders(ctx.db, {from: ctx.query.from, to: ctx.query.to});
 
@@ -20,19 +20,22 @@ module.exports = async (ctx) => {
     }
   }
 
-  // get top 50 products
-  let productsTop = Object.entries(products).sort((a, b) => b[1] - a[1]).slice(0, 50);
+  let pageSize = +ctx.query._end || 50;
 
-  // sort by name these top 50 products
+  // get top pageSize products
+  let productsTop = Object.entries(products).sort((a, b) => b[1] - a[1]).slice(0, pageSize);
+
+  // sort by name these top pageSize products
   // (default sort order)
   let sortField = ctx.query._sort || 'title';
-  let getter = db.createGetter(sortField);
+  let getter = ctx.db.createGetter(sortField);
   let order = ctx.query._order === 'desc' ? -1 : 1;
 
   productsTop.sort((a, b) =>
     getter(a) > getter(b) ? order :
       getter(a) == getter(b) ? 0 : -order);
 
+  console.log(productsTop);
   let results = [];
   for(let [id, salesCount] of productsTop) {
     let product = _.cloneDeep(ctx.db.getById('products', id));

@@ -25,14 +25,26 @@ module.exports = (db, name, opts) => {
   async function list(ctx, next) {
 
     let filters = {
-      lte:  (compareWith, getter, value) => {
-        console.log("LOG", compareWith, value, getter(value));
-        return getter(value) <= compareWith
+      lte(compareWith, getter, value) {
+        compareWith = new Date(compareWith);
+        compareWith.setHours(23, 59, 59, 999);
+        // console.log("LOG", compareWith, value, getter(value));
+        return getter(value) <= compareWith;
       },
-      gte:  (compareWith, getter, value) => getter(value) >= compareWith,
-      eq:   (match, getter, value) => getter(value) == match,
-      ne:   (match, getter, value) => getter(value) != match,
-      like: (match, getter, value) => String(getter(value)).toLowerCase().includes(match.toLowerCase())
+      gte(compareWith, getter, value) {
+        compareWith = new Date(compareWith);
+        compareWith.setHours(0, 0, 0, 0);
+        return getter(value) >= compareWith;
+      },
+      eq(match, getter, value) {
+        return getter(value) == match;
+      },
+      ne(match, getter, value) {
+        return getter(value) != match;
+      },
+      like(match, getter, value) {
+        return String(getter(value)).toLowerCase().includes(match.toLowerCase());
+      }
     };
 
     let processingChain = {

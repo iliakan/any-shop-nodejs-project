@@ -24,6 +24,8 @@ module.exports = (db, name, opts) => {
   // GET /products?_embed=category,other
   async function list(ctx, next) {
 
+    await new Promise(resolve => setTimeout(resolve, 5000));
+
     let filters = {
       lte(compareWith, getter, value) {
         compareWith = new Date(compareWith);

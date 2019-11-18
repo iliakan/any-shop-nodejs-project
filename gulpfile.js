@@ -8,8 +8,8 @@ process.on('uncaughtException', function(err) {
 });
 
 task('convertFixtures', require('./tasks/convertFixtures'));
+
 task('server', require('./tasks/server'));
-task('validateDb', require('./tasks/validateDb'));
 task('generateOrders', require('./tasks/generateOrders'));
 
 task('nodemon', require('./tasks/nodemon'));
@@ -20,3 +20,6 @@ task('livereload', require('./tasks/livereload').bind(null, {
 
 task('dev', parallel('nodemon', 'livereload'));
 task('fixtures', series('convertFixtures', 'generateOrders'));
+
+
+// task('validateDb', require('./tasks/validateDb'));

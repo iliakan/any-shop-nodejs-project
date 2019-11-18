@@ -6,6 +6,8 @@ const faker = require('faker');
 const dataDir = path.resolve(__dirname, '../data');
 const files = fs.readdirSync(path.join(dataDir, 'original_data'));
 
+const db = require('../libs/db');
+
 faker.seed(1);
 
 const PRODUCTS_PER_CATEGORY_MAX = 10;
@@ -70,7 +72,14 @@ module.exports = async function() {
         category:    categorySlug,
         subcategory: subcategorySlug,
         status:     faker.random.number({min: 1, max: 10}) !== 10,
-        images:      product['Ссылки на фото (через пробел)'].split(' ').map(link => link.trim()).slice(0, 5),
+        images:      product['Ссылки на фото (через пробел)']
+                       .split(' ')
+                       .map(link => link.trim())
+                       .slice(0, 5)
+                       .map(link => ({
+                         url: link,
+                         source: path.basename(link)
+                       })),
         price:       Math.round(product['Цена'].replace(/\s/g, '').replace(',', '.') / 60), // make price integer for simplicity
         discount: 0
       };
@@ -98,7 +107,10 @@ module.exports = async function() {
     }
   }
 
-  fs.writeFileSync(path.resolve(dataDir, 'db.json'), JSON.stringify({categories, subcategories, products}, null, 2));
-
+  db.set('categories', categories);
+  db.set('subcategories', subcategories);
+  db.set('products', products);
+  db.validateSelf();
+  db.save();
 };
 

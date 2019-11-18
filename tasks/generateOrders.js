@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const faker = require('faker');
-const dataDir = path.resolve(__dirname, '../data');
+
+let db = require('../libs/db');
 
 faker.locale = "ru";
 
@@ -11,13 +12,13 @@ function graph(x) {
   return ((Math.sin(x * Math.PI / 7) + 1) + x / 10) * 2;
 }
 
-const db = require(path.resolve(dataDir, 'db.json'));
-
-db.orders = [];
-
 faker.seed(1);
 
 module.exports = async function() {
+  db.load();
+
+  db.set('orders', []);
+
   let date = new Date(2019, 7);
   let id = 1;
   while (date < Date.now()) {
@@ -27,7 +28,7 @@ module.exports = async function() {
       let products = [];
       let totalCost = 0;
       for(let i=0; i < productsCount; i++) {
-        let product = db.products[faker.random.number({max: db.products.length - 1})];
+        let product = db.get('products')[faker.random.number({max: db.get('products').length - 1})];
         let count = faker.random.number({min: 1, max: (product.price < 20) ? 3 : (product.price < 100) ? 2 : 1});
         totalCost += count * (product.price - product.discount);
         products.push({product: product.id, count});
@@ -41,8 +42,8 @@ module.exports = async function() {
       };
 
       // 20% probability of an existing user to make the order again
-      if (db.orders.length > 5 && faker.random.number({min:1, max: 5}) === 1) {
-        let takeUserFromOrder = db.orders[faker.random.number({min: 0, max: db.orders.length - 1})];
+      if (db.get('orders').length > 5 && faker.random.number({min:1, max: 5}) === 1) {
+        let takeUserFromOrder = db.get('orders')[faker.random.number({min: 0, max: db.get('orders').length - 1})];
         order.user = takeUserFromOrder.user;
         order.phone = takeUserFromOrder.phone;
       } else {
@@ -51,12 +52,11 @@ module.exports = async function() {
       }
 
 
-      db.orders.push(order);
-      // console.log(order);
+      db.get('orders').push(order);
     }
     id++;
     date.setDate(date.getDate() + 1);
   }
 
-  fs.writeFileSync(path.resolve(dataDir, 'db.json'), JSON.stringify(db, null, 2));
+  db.save();
 };

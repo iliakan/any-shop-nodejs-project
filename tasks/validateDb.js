@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const Db = require('../libs/db');
-
-let db = new Db(path.join(__dirname, '../data/db.json'), path.join(__dirname, '../data/db.schemas.js'));
+const db = require('../libs/db');
 
 module.exports = async function() {
   let validate = db.getValidate('db');

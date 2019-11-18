@@ -34,14 +34,19 @@ module.exports = [
       images:      {
         type:  "array",
         items: {
-          type: "string"
+          type: "object",
+          properties: {
+            source: { type: "string" },
+            url: { type: "string"}
+          },
+          additionalProperties: false
         },
         uniqueItems: true
       },
       price:       {type: "number"},
       discount:       {type: "number"}
     },
-    required:             ["id", "title", "description", "quantity", "category", "subcategory", "enabled", "images", "price"],
+    required:             ["id", "title", "description", "quantity", "category", "subcategory", "status", "images", "price"],
     additionalProperties: false
   }, {
     $id:                  "https://javascript.info/schemas/order.json",

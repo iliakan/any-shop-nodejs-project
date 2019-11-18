@@ -2,7 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const Ajv = require('ajv');
 
-module.exports = class Db {
+const dbPath = path.join(__dirname, '../data/db.json');
+const schemaPath = path.join(__dirname, '../data/db.schemas.js');
+
+class Db {
 
   constructor(filePath, schemasPath) {
     this.filePath = filePath;
@@ -12,8 +15,14 @@ module.exports = class Db {
       allErrors: true,
       // verbose: true
     });
+  }
 
-    this.load();
+  static instance() {
+    if (!this._instance) {
+      this._instance = new Db(dbPath, schemaPath);
+      this._instance.load();
+    }
+    return this._instance;
   }
 
   getAll() {
@@ -40,6 +49,10 @@ module.exports = class Db {
   }
 
   load() {
+    if (!fs.existsSync(this.filePath)) {
+      this.data = {};
+      return;
+    }
     this.data = this.deserialize(fs.readFileSync(this.filePath, 'utf-8'));
   }
 
@@ -66,6 +79,14 @@ module.exports = class Db {
     return this.ajv.getSchema(`https://javascript.info/schemas/${name}.json`);
   }
 
+  validateSelf() {
+    let validate = this.ajv.getSchema(`https://javascript.info/schemas/db.json`);
+    if (!validate({db: this.data})) {
+      console.error(validate.errors);
+      throw new Error("Validation error");
+    }
+  }
+
   // returns a function that gets required field from value, including subfields
   // getter = createGetter('category')
   // getter(product) // gets product.category
@@ -90,5 +111,7 @@ module.exports = class Db {
 
   }
 
-};
+}
 
+
+module.exports = Db.instance();

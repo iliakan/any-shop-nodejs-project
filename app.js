@@ -3,23 +3,9 @@ const config = require('./config');
 const path = require('path');
 const send = require('koa-send');
 const Router = require('@koa/router');
-const Db = require('./libs/db');
-/*
-const {recommendationsList} = require('./controllers/recommendations');
-const {
-  productsBySubcategory, productsByQuery, productList, productBySlug
-} = require('./controllers/products');
-const {categoryList} = require('./controllers/categories');
-const {login} = require('./controllers/login');
-const {oauth, oauthCallback} = require('./controllers/oauth');
-const {me} = require('./controllers/me');
-const {register, confirm} = require('./controllers/registration');
-const {checkout, getOrdersList} = require('./controllers/orders');
-const {messageList} = require('./controllers/messages');
-*/
 
 const app = new Koa();
-app.context.db = new Db(path.join(__dirname, 'data/db.json'), path.join(__dirname, 'data/db.schemas.js'));
+app.context.db = require('./libs/db');
 app.log = require('./libs/log')();
 app.use(require('koa-static')(config.publicRoot));
 require('./handlers/requestId')(app);

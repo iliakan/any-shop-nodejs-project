@@ -30,7 +30,7 @@ module.exports = [
       quantity:    {type: "number"},
       category:    {type: "string"},
       subcategory: {type: "string"},
-      status:     {type: "boolean"},
+      status:     {type: "number"},
       images:      {
         type:  "array",
         items: {

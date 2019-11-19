@@ -264,7 +264,7 @@
       "quantity": 42,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/598194.jpg",
@@ -297,7 +297,7 @@
       "quantity": 94,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/164281.jpg",
@@ -330,7 +330,7 @@
       "quantity": 31,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1220903.jpg",
@@ -363,7 +363,7 @@
       "quantity": 24,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/181293.jpg",
@@ -396,7 +396,7 @@
       "quantity": 19,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/181326.jpg",
@@ -429,7 +429,7 @@
       "quantity": 67,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/166167.jpg",
@@ -462,7 +462,7 @@
       "quantity": 54,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/193761.jpg",
@@ -495,7 +495,7 @@
       "quantity": 32,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/951387.jpg",
@@ -528,7 +528,7 @@
       "quantity": 21,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/718125.jpg",
@@ -561,7 +561,7 @@
       "quantity": 23,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "progulki-i-detskaya-komnata",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/710935.jpg",
@@ -594,7 +594,7 @@
       "quantity": 68,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1202744.jpg",
@@ -627,7 +627,7 @@
       "quantity": 42,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1304719.jpg",
@@ -652,7 +652,7 @@
       "quantity": 56,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/890067.jpg",
@@ -669,7 +669,7 @@
       "quantity": 15,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1120837.jpg",
@@ -702,7 +702,7 @@
       "quantity": 20,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1304722.jpg",
@@ -731,7 +731,7 @@
       "quantity": 81,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/880954.jpg",
@@ -760,7 +760,7 @@
       "quantity": 97,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/868515.jpg",
@@ -793,7 +793,7 @@
       "quantity": 32,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1304516.jpg",
@@ -822,7 +822,7 @@
       "quantity": 70,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/885699.jpg",
@@ -855,7 +855,7 @@
       "quantity": 88,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "kormlenie-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/885694.jpg",
@@ -888,7 +888,7 @@
       "quantity": 90,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/925705.jpg",
@@ -917,7 +917,7 @@
       "quantity": 9,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1311106.jpg",
@@ -942,7 +942,7 @@
       "quantity": 4,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/1311092.jpg",
@@ -959,7 +959,7 @@
       "quantity": 17,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/925727.jpg",
@@ -984,7 +984,7 @@
       "quantity": 88,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1308244.jpg",
@@ -1001,7 +1001,7 @@
       "quantity": 10,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/769064.jpg",
@@ -1034,7 +1034,7 @@
       "quantity": 43,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1311171.jpg",
@@ -1067,7 +1067,7 @@
       "quantity": 96,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/996324.jpg",
@@ -1100,7 +1100,7 @@
       "quantity": 54,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1310754.jpg",
@@ -1133,7 +1133,7 @@
       "quantity": 70,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "igrushki-i-razvlecheniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://mzimg.com/big/j1/fom2rklj8j1.jpg",
@@ -1158,7 +1158,7 @@
       "quantity": 32,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/460399.jpg",
@@ -1191,7 +1191,7 @@
       "quantity": 69,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/363673.jpg",
@@ -1224,7 +1224,7 @@
       "quantity": 84,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/821895.jpg",
@@ -1249,7 +1249,7 @@
       "quantity": 2,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://mzimg.com/big/e1/f45nc17xhe1.jpg",
@@ -1282,7 +1282,7 @@
       "quantity": 76,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/460710.jpg",
@@ -1315,7 +1315,7 @@
       "quantity": 99,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1210634.jpg",
@@ -1348,7 +1348,7 @@
       "quantity": 75,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/431046.jpg",
@@ -1381,7 +1381,7 @@
       "quantity": 29,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/922883.jpg",
@@ -1414,7 +1414,7 @@
       "quantity": 23,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/546661.jpg",
@@ -1447,7 +1447,7 @@
       "quantity": 8,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "aktivniy-otdyh-i-ulitsa",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/621108.jpg",
@@ -1476,7 +1476,7 @@
       "quantity": 47,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/930188.jpg",
@@ -1509,7 +1509,7 @@
       "quantity": 10,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/335156.jpg",
@@ -1542,7 +1542,7 @@
       "quantity": 91,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/334344.jpg",
@@ -1575,7 +1575,7 @@
       "quantity": 12,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/335413.jpg",
@@ -1608,7 +1608,7 @@
       "quantity": 53,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/490095.jpg",
@@ -1641,7 +1641,7 @@
       "quantity": 9,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/335426.jpg",
@@ -1674,7 +1674,7 @@
       "quantity": 92,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/469820.jpg",
@@ -1707,7 +1707,7 @@
       "quantity": 92,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1178747.jpg",
@@ -1740,7 +1740,7 @@
       "quantity": 30,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/334432.jpg",
@@ -1773,7 +1773,7 @@
       "quantity": 6,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "radioupravlyaemye-modeli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/448003.jpg",
@@ -1806,7 +1806,7 @@
       "quantity": 58,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/886493.jpg",
@@ -1839,7 +1839,7 @@
       "quantity": 15,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/905979.jpg",
@@ -1856,7 +1856,7 @@
       "quantity": 59,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1113620.jpg",
@@ -1873,7 +1873,7 @@
       "quantity": 70,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/905971.jpg",
@@ -1890,7 +1890,7 @@
       "quantity": 11,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/893783.jpg",
@@ -1923,7 +1923,7 @@
       "quantity": 42,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/905913.jpg",
@@ -1940,7 +1940,7 @@
       "quantity": 70,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1189186.jpg",
@@ -1957,7 +1957,7 @@
       "quantity": 42,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1114603.jpg",
@@ -1990,7 +1990,7 @@
       "quantity": 5,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/866278.jpg",
@@ -2023,7 +2023,7 @@
       "quantity": 54,
       "category": "detskie-tovary-i-igrushki",
       "subcategory": "shkolnye-tovary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1186289.jpg",
@@ -2048,7 +2048,7 @@
       "quantity": 67,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/700928.jpg",
@@ -2081,7 +2081,7 @@
       "quantity": 52,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1088756.jpg",
@@ -2114,7 +2114,7 @@
       "quantity": 95,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/498390.jpg",
@@ -2147,7 +2147,7 @@
       "quantity": 59,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/599764.jpg",
@@ -2180,7 +2180,7 @@
       "quantity": 91,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/868555.jpg",
@@ -2213,7 +2213,7 @@
       "quantity": 14,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/675231.jpg",
@@ -2246,7 +2246,7 @@
       "quantity": 14,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/944502.jpg",
@@ -2279,7 +2279,7 @@
       "quantity": 81,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1081714.jpg",
@@ -2312,7 +2312,7 @@
       "quantity": 40,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/886464.jpg",
@@ -2345,7 +2345,7 @@
       "quantity": 17,
       "category": "kompyuternaya-tehnika",
       "subcategory": "noutbuki-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/453302.jpg",
@@ -2378,7 +2378,7 @@
       "quantity": 93,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/831112.jpg",
@@ -2411,7 +2411,7 @@
       "quantity": 58,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/786357.jpg",
@@ -2444,7 +2444,7 @@
       "quantity": 73,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/280182.jpg",
@@ -2477,7 +2477,7 @@
       "quantity": 70,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/781256.jpg",
@@ -2510,7 +2510,7 @@
       "quantity": 76,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/770743.jpg",
@@ -2543,7 +2543,7 @@
       "quantity": 77,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/381581.jpg",
@@ -2576,7 +2576,7 @@
       "quantity": 90,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1033661.jpg",
@@ -2609,7 +2609,7 @@
       "quantity": 89,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/772887.jpg",
@@ -2642,7 +2642,7 @@
       "quantity": 67,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/297777.jpg",
@@ -2675,7 +2675,7 @@
       "quantity": 8,
       "category": "kompyuternaya-tehnika",
       "subcategory": "monitory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1201409.jpg",
@@ -2708,7 +2708,7 @@
       "quantity": 95,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1059840.jpg",
@@ -2741,7 +2741,7 @@
       "quantity": 36,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1272090.jpg",
@@ -2774,7 +2774,7 @@
       "quantity": 41,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/969923.jpg",
@@ -2807,7 +2807,7 @@
       "quantity": 24,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/403451.jpg",
@@ -2840,7 +2840,7 @@
       "quantity": 91,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1218070.jpg",
@@ -2873,7 +2873,7 @@
       "quantity": 31,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/907006.jpg",
@@ -2906,7 +2906,7 @@
       "quantity": 78,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/339104.jpg",
@@ -2927,7 +2927,7 @@
       "quantity": 16,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1024286.jpg",
@@ -2960,7 +2960,7 @@
       "quantity": 58,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1077395.jpg",
@@ -2993,7 +2993,7 @@
       "quantity": 89,
       "category": "kompyuternaya-tehnika",
       "subcategory": "komplektuyuschie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1253493.jpg",
@@ -3022,7 +3022,7 @@
       "quantity": 36,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/978329.jpg",
@@ -3043,7 +3043,7 @@
       "quantity": 91,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/106413.jpg",
@@ -3076,7 +3076,7 @@
       "quantity": 63,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1244775.jpg",
@@ -3109,7 +3109,7 @@
       "quantity": 2,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1054746.jpg",
@@ -3138,7 +3138,7 @@
       "quantity": 93,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1171183.jpg",
@@ -3171,7 +3171,7 @@
       "quantity": 70,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/821029.jpg",
@@ -3204,7 +3204,7 @@
       "quantity": 100,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/95633.jpg",
@@ -3237,7 +3237,7 @@
       "quantity": 18,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/408680.jpg",
@@ -3266,7 +3266,7 @@
       "quantity": 14,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/586134.jpg",
@@ -3295,7 +3295,7 @@
       "quantity": 94,
       "category": "kompyuternaya-tehnika",
       "subcategory": "setevoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/821009.jpg",
@@ -3320,7 +3320,7 @@
       "quantity": 47,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/274317.jpg",
@@ -3349,7 +3349,7 @@
       "quantity": 76,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/574036.jpg",
@@ -3366,7 +3366,7 @@
       "quantity": 76,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/301432.jpg",
@@ -3391,7 +3391,7 @@
       "quantity": 93,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/336648.jpg",
@@ -3416,7 +3416,7 @@
       "quantity": 52,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/74417.jpg",
@@ -3449,7 +3449,7 @@
       "quantity": 2,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/610859.jpg",
@@ -3466,7 +3466,7 @@
       "quantity": 11,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/262767.jpg",
@@ -3483,7 +3483,7 @@
       "quantity": 51,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://mzimg.com/big/xg/e2pa8uua0xg.jpg",
@@ -3504,7 +3504,7 @@
       "quantity": 87,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/832998.jpg",
@@ -3529,7 +3529,7 @@
       "quantity": 24,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vstraivaemaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/550951.jpg",
@@ -3546,7 +3546,7 @@
       "quantity": 85,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/238759.jpg",
@@ -3567,7 +3567,7 @@
       "quantity": 24,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/944720.jpg",
@@ -3600,7 +3600,7 @@
       "quantity": 59,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/278540.jpg",
@@ -3633,7 +3633,7 @@
       "quantity": 42,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/288373.jpg",
@@ -3666,7 +3666,7 @@
       "quantity": 2,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/229172.jpg",
@@ -3691,7 +3691,7 @@
       "quantity": 29,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/92555.jpg",
@@ -3708,7 +3708,7 @@
       "quantity": 81,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/512369.jpg",
@@ -3733,7 +3733,7 @@
       "quantity": 43,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/387328.jpg",
@@ -3766,7 +3766,7 @@
       "quantity": 75,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/693648.jpg",
@@ -3783,7 +3783,7 @@
       "quantity": 43,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "stiralnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/934329.jpg",
@@ -3816,7 +3816,7 @@
       "quantity": 6,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/835101.jpg",
@@ -3833,7 +3833,7 @@
       "quantity": 94,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1223868.jpg",
@@ -3862,7 +3862,7 @@
       "quantity": 11,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/966089.jpg",
@@ -3879,7 +3879,7 @@
       "quantity": 62,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1055202.jpg",
@@ -3896,7 +3896,7 @@
       "quantity": 56,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/316083.jpg",
@@ -3913,7 +3913,7 @@
       "quantity": 13,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/694302.jpg",
@@ -3930,7 +3930,7 @@
       "quantity": 97,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/819385.jpg",
@@ -3955,7 +3955,7 @@
       "quantity": 28,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/990742.jpg",
@@ -3972,7 +3972,7 @@
       "quantity": 26,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/746046.jpg",
@@ -3997,7 +3997,7 @@
       "quantity": 17,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "sushilnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/786011.jpg",
@@ -4014,7 +4014,7 @@
       "quantity": 59,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1205358.jpg",
@@ -4047,7 +4047,7 @@
       "quantity": 6,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/52855.jpg",
@@ -4080,7 +4080,7 @@
       "quantity": 24,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/858155.jpg",
@@ -4109,7 +4109,7 @@
       "quantity": 21,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/715030.jpg",
@@ -4142,7 +4142,7 @@
       "quantity": 83,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/124161.jpg",
@@ -4167,7 +4167,7 @@
       "quantity": 76,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/530608.jpg",
@@ -4200,7 +4200,7 @@
       "quantity": 8,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/910726.jpg",
@@ -4225,7 +4225,7 @@
       "quantity": 82,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/743723.jpg",
@@ -4258,7 +4258,7 @@
       "quantity": 57,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/530734.jpg",
@@ -4283,7 +4283,7 @@
       "quantity": 54,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "holodilniki",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/384697.jpg",
@@ -4300,7 +4300,7 @@
       "quantity": 58,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/254876.jpg",
@@ -4317,7 +4317,7 @@
       "quantity": 51,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/97656.jpg",
@@ -4334,7 +4334,7 @@
       "quantity": 75,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/180811.jpg",
@@ -4351,7 +4351,7 @@
       "quantity": 47,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/716017.jpg",
@@ -4372,7 +4372,7 @@
       "quantity": 7,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/203757.jpg",
@@ -4389,7 +4389,7 @@
       "quantity": 22,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/544787.jpg",
@@ -4406,7 +4406,7 @@
       "quantity": 22,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/167395.jpg",
@@ -4423,7 +4423,7 @@
       "quantity": 17,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1120741.jpg",
@@ -4444,7 +4444,7 @@
       "quantity": 27,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1205381.jpg",
@@ -4461,7 +4461,7 @@
       "quantity": 15,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "morozilnye-kamery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/167398.jpg",
@@ -4478,7 +4478,7 @@
       "quantity": 64,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1141292.jpg",
@@ -4495,7 +4495,7 @@
       "quantity": 84,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1141281.jpg",
@@ -4512,7 +4512,7 @@
       "quantity": 27,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/927820.jpg",
@@ -4529,7 +4529,7 @@
       "quantity": 73,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1305551.jpg",
@@ -4550,7 +4550,7 @@
       "quantity": 78,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/189059.jpg",
@@ -4567,7 +4567,7 @@
       "quantity": 17,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/927793.jpg",
@@ -4584,7 +4584,7 @@
       "quantity": 2,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/649954.jpg",
@@ -4601,7 +4601,7 @@
       "quantity": 73,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/189083.jpg",
@@ -4618,7 +4618,7 @@
       "quantity": 95,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/824549.jpg",
@@ -4635,7 +4635,7 @@
       "quantity": 93,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vinnye-shkafy",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/763631.jpg",
@@ -4652,7 +4652,7 @@
       "quantity": 92,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vytyazhki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/509072.jpg",
@@ -4669,7 +4669,7 @@
       "quantity": 93,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vytyazhki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/752878.jpg",
@@ -4686,7 +4686,7 @@
       "quantity": 49,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vytyazhki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/97496.jpg",
@@ -4703,7 +4703,7 @@
       "quantity": 3,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "vytyazhki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1302331.jpg",
@@ -4720,7 +4720,7 @@
       "quantity": 93,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/636886.jpg",
@@ -4745,7 +4745,7 @@
       "quantity": 37,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/824930.jpg",
@@ -4774,7 +4774,7 @@
       "quantity": 97,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/126687.jpg",
@@ -4803,7 +4803,7 @@
       "quantity": 18,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/428122.jpg",
@@ -4828,7 +4828,7 @@
       "quantity": 8,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/522146.jpg",
@@ -4853,7 +4853,7 @@
       "quantity": 51,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/462865.jpg",
@@ -4878,7 +4878,7 @@
       "quantity": 46,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/636874.jpg",
@@ -4907,7 +4907,7 @@
       "quantity": 83,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/105980.jpg",
@@ -4932,7 +4932,7 @@
       "quantity": 48,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1189973.jpg",
@@ -4953,7 +4953,7 @@
       "quantity": 34,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "plity",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/783787.jpg",
@@ -4982,7 +4982,7 @@
       "quantity": 89,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/931198.jpg",
@@ -5007,7 +5007,7 @@
       "quantity": 35,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/625513.jpg",
@@ -5040,7 +5040,7 @@
       "quantity": 36,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/931184.jpg",
@@ -5065,7 +5065,7 @@
       "quantity": 88,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/842991.jpg",
@@ -5098,7 +5098,7 @@
       "quantity": 3,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/446072.jpg",
@@ -5123,7 +5123,7 @@
       "quantity": 46,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/174009.jpg",
@@ -5148,7 +5148,7 @@
       "quantity": 35,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/250529.jpg",
@@ -5165,7 +5165,7 @@
       "quantity": 29,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/625540.jpg",
@@ -5194,7 +5194,7 @@
       "quantity": 96,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/946530.jpg",
@@ -5223,7 +5223,7 @@
       "quantity": 2,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "posudomoechnye-mashiny",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/167527.jpg",
@@ -5240,7 +5240,7 @@
       "quantity": 22,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://mzimg.com/big/m1/f8wnvyg2mm1.jpg",
@@ -5273,7 +5273,7 @@
       "quantity": 81,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/885830.jpg",
@@ -5306,7 +5306,7 @@
       "quantity": 24,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/776741.jpg",
@@ -5339,7 +5339,7 @@
       "quantity": 58,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/876595.jpg",
@@ -5372,7 +5372,7 @@
       "quantity": 20,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/187373.jpg",
@@ -5405,7 +5405,7 @@
       "quantity": 62,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/276579.jpg",
@@ -5422,7 +5422,7 @@
       "quantity": 2,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1086980.jpg",
@@ -5455,7 +5455,7 @@
       "quantity": 68,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1207235.jpg",
@@ -5488,7 +5488,7 @@
       "quantity": 58,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/219196.jpg",
@@ -5521,7 +5521,7 @@
       "quantity": 98,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "melkaya-bytovaya-tehnika",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/252229.jpg",
@@ -5550,7 +5550,7 @@
       "quantity": 26,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "mikrovolnovye-pechi",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/757362.jpg",
@@ -5567,7 +5567,7 @@
       "quantity": 9,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "elektroduhovki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/624920.jpg",
@@ -5584,7 +5584,7 @@
       "quantity": 83,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/321988.jpg",
@@ -5609,7 +5609,7 @@
       "quantity": 58,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/693408.jpg",
@@ -5642,7 +5642,7 @@
       "quantity": 63,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1132147.jpg",
@@ -5663,7 +5663,7 @@
       "quantity": 70,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1250423.jpg",
@@ -5696,7 +5696,7 @@
       "quantity": 76,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1200679.jpg",
@@ -5721,7 +5721,7 @@
       "quantity": 4,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/642251.jpg",
@@ -5738,7 +5738,7 @@
       "quantity": 79,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1299295.jpg",
@@ -5771,7 +5771,7 @@
       "quantity": 87,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/890574.jpg",
@@ -5800,7 +5800,7 @@
       "quantity": 33,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/554560.jpg",
@@ -5833,7 +5833,7 @@
       "quantity": 47,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "uborochnye-mashiny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1150078.jpg",
@@ -5854,7 +5854,7 @@
       "quantity": 39,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "paroochistiteli",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/765596.jpg",
@@ -5871,7 +5871,7 @@
       "quantity": 42,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1102234.jpg",
@@ -5904,7 +5904,7 @@
       "quantity": 41,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1102911.jpg",
@@ -5937,7 +5937,7 @@
       "quantity": 32,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/971747.jpg",
@@ -5970,7 +5970,7 @@
       "quantity": 57,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1102114.jpg",
@@ -5987,7 +5987,7 @@
       "quantity": 17,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1102024.jpg",
@@ -6004,7 +6004,7 @@
       "quantity": 43,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1037634.jpg",
@@ -6021,7 +6021,7 @@
       "quantity": 20,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/971734.jpg",
@@ -6054,7 +6054,7 @@
       "quantity": 1,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/971312.jpg",
@@ -6087,7 +6087,7 @@
       "quantity": 22,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1107633.jpg",
@@ -6116,7 +6116,7 @@
       "quantity": 88,
       "category": "krupnaya-bytovaya-tehnika",
       "subcategory": "kulery-i-purifayery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1103175.jpg",
@@ -6149,7 +6149,7 @@
       "quantity": 79,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/1237575.jpg",
@@ -6166,7 +6166,7 @@
       "quantity": 52,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1237566.jpg",
@@ -6199,7 +6199,7 @@
       "quantity": 2,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/820218.jpg",
@@ -6216,7 +6216,7 @@
       "quantity": 30,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/1172435.jpg",
@@ -6233,7 +6233,7 @@
       "quantity": 55,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/146990.jpg",
@@ -6250,7 +6250,7 @@
       "quantity": 86,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/602184.jpg",
@@ -6267,7 +6267,7 @@
       "quantity": 19,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1238176.jpg",
@@ -6284,7 +6284,7 @@
       "quantity": 9,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/192498.jpg",
@@ -6301,7 +6301,7 @@
       "quantity": 5,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1238205.jpg",
@@ -6318,7 +6318,7 @@
       "quantity": 45,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "kuhnya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1300788.jpg",
@@ -6335,7 +6335,7 @@
       "quantity": 2,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/508569.jpg",
@@ -6352,7 +6352,7 @@
       "quantity": 7,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1150964.jpg",
@@ -6369,7 +6369,7 @@
       "quantity": 82,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1210294.jpg",
@@ -6386,7 +6386,7 @@
       "quantity": 64,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/820762.jpg",
@@ -6415,7 +6415,7 @@
       "quantity": 78,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/190330.jpg",
@@ -6432,7 +6432,7 @@
       "quantity": 71,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/846096.jpg",
@@ -6465,7 +6465,7 @@
       "quantity": 24,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/630427.jpg",
@@ -6486,7 +6486,7 @@
       "quantity": 5,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1133029.jpg",
@@ -6503,7 +6503,7 @@
       "quantity": 29,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://mzimg.com/big/s1/ecsfn6zaps1.jpg",
@@ -6520,7 +6520,7 @@
       "quantity": 87,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "bytovye-pribory-dlya-doma",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/426353.jpg",
@@ -6537,7 +6537,7 @@
       "quantity": 8,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1253485.jpg",
@@ -6570,7 +6570,7 @@
       "quantity": 57,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1217716.jpg",
@@ -6587,7 +6587,7 @@
       "quantity": 17,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/212929.jpg",
@@ -6604,7 +6604,7 @@
       "quantity": 47,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/586813.jpg",
@@ -6625,7 +6625,7 @@
       "quantity": 35,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1227712.jpg",
@@ -6646,7 +6646,7 @@
       "quantity": 23,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/942394.jpg",
@@ -6663,7 +6663,7 @@
       "quantity": 60,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/452853.jpg",
@@ -6692,7 +6692,7 @@
       "quantity": 32,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/908288.jpg",
@@ -6709,7 +6709,7 @@
       "quantity": 92,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/229235.jpg",
@@ -6730,7 +6730,7 @@
       "quantity": 91,
       "category": "melkaya-bytovaya-tehnika",
       "subcategory": "krasota-i-gigiena",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/820882.jpg",
@@ -6751,7 +6751,7 @@
       "quantity": 26,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1112931.jpg",
@@ -6784,7 +6784,7 @@
       "quantity": 45,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1123383.jpg",
@@ -6817,7 +6817,7 @@
       "quantity": 50,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1112478.jpg",
@@ -6850,7 +6850,7 @@
       "quantity": 1,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1067880.jpg",
@@ -6883,7 +6883,7 @@
       "quantity": 25,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1123257.jpg",
@@ -6916,7 +6916,7 @@
       "quantity": 6,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1112509.jpg",
@@ -6949,7 +6949,7 @@
       "quantity": 62,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1123311.jpg",
@@ -6982,7 +6982,7 @@
       "quantity": 32,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1113460.jpg",
@@ -7011,7 +7011,7 @@
       "quantity": 52,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1161166.jpg",
@@ -7040,7 +7040,7 @@
       "quantity": 22,
       "category": "tv-i-videotehnika",
       "subcategory": "lcd-televizory",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/403731.jpg",
@@ -7069,7 +7069,7 @@
       "quantity": 63,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/551169.jpg",
@@ -7102,7 +7102,7 @@
       "quantity": 55,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/551152.jpg",
@@ -7131,7 +7131,7 @@
       "quantity": 66,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/926868.jpg",
@@ -7164,7 +7164,7 @@
       "quantity": 15,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/926873.jpg",
@@ -7197,7 +7197,7 @@
       "quantity": 76,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/455061.jpg",
@@ -7230,7 +7230,7 @@
       "quantity": 23,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/321480.jpg",
@@ -7255,7 +7255,7 @@
       "quantity": 52,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/370720.jpg",
@@ -7288,7 +7288,7 @@
       "quantity": 79,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/226525.jpg",
@@ -7309,7 +7309,7 @@
       "quantity": 3,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/455040.jpg",
@@ -7342,7 +7342,7 @@
       "quantity": 33,
       "category": "tv-i-videotehnika",
       "subcategory": "podstavki-i-krepleniya",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/214412.jpg",
@@ -7363,7 +7363,7 @@
       "quantity": 88,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/885058.jpg",
@@ -7396,7 +7396,7 @@
       "quantity": 85,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1167046.jpg",
@@ -7429,7 +7429,7 @@
       "quantity": 54,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1310318.jpg",
@@ -7446,7 +7446,7 @@
       "quantity": 63,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/675582.jpg",
@@ -7479,7 +7479,7 @@
       "quantity": 21,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1204929.jpg",
@@ -7512,7 +7512,7 @@
       "quantity": 86,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/864113.jpg",
@@ -7545,7 +7545,7 @@
       "quantity": 10,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1310382.jpg",
@@ -7562,7 +7562,7 @@
       "quantity": 73,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/644674.jpg",
@@ -7595,7 +7595,7 @@
       "quantity": 62,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/720779.jpg",
@@ -7624,7 +7624,7 @@
       "quantity": 71,
       "category": "tv-i-videotehnika",
       "subcategory": "mediapleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/430501.jpg",
@@ -7657,7 +7657,7 @@
       "quantity": 59,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/472337.jpg",
@@ -7674,7 +7674,7 @@
       "quantity": 97,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/556197.jpg",
@@ -7695,7 +7695,7 @@
       "quantity": 31,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/669869.jpg",
@@ -7716,7 +7716,7 @@
       "quantity": 32,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/472612.jpg",
@@ -7737,7 +7737,7 @@
       "quantity": 23,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/469993.jpg",
@@ -7754,7 +7754,7 @@
       "quantity": 68,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/472380.jpg",
@@ -7775,7 +7775,7 @@
       "quantity": 78,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/803531.jpg",
@@ -7800,7 +7800,7 @@
       "quantity": 52,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/472608.jpg",
@@ -7821,7 +7821,7 @@
       "quantity": 62,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/730804.jpg",
@@ -7838,7 +7838,7 @@
       "quantity": 5,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-tyunery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/473355.jpg",
@@ -7871,7 +7871,7 @@
       "quantity": 31,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/723250.jpg",
@@ -7892,7 +7892,7 @@
       "quantity": 15,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/710188.jpg",
@@ -7909,7 +7909,7 @@
       "quantity": 91,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/710195.jpg",
@@ -7926,7 +7926,7 @@
       "quantity": 55,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/723280.jpg",
@@ -7943,7 +7943,7 @@
       "quantity": 98,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1294682.jpg",
@@ -7968,7 +7968,7 @@
       "quantity": 64,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/710281.jpg",
@@ -7985,7 +7985,7 @@
       "quantity": 100,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/955970.jpg",
@@ -8002,7 +8002,7 @@
       "quantity": 55,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/707933.jpg",
@@ -8019,7 +8019,7 @@
       "quantity": 53,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/762312.jpg",
@@ -8044,7 +8044,7 @@
       "quantity": 14,
       "category": "tv-i-videotehnika",
       "subcategory": "tv-antenny",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/762134.jpg",
@@ -8061,7 +8061,7 @@
       "quantity": 36,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/283408.jpg",
@@ -8086,7 +8086,7 @@
       "quantity": 3,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg/225157.jpg",
@@ -8103,7 +8103,7 @@
       "quantity": 17,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/283392.jpg",
@@ -8128,7 +8128,7 @@
       "quantity": 75,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/246743.jpg",
@@ -8145,7 +8145,7 @@
       "quantity": 4,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/277605.jpg",
@@ -8178,7 +8178,7 @@
       "quantity": 37,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1016606.jpg",
@@ -8211,7 +8211,7 @@
       "quantity": 87,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1189619.jpg",
@@ -8228,7 +8228,7 @@
       "quantity": 70,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/314571.jpg",
@@ -8245,7 +8245,7 @@
       "quantity": 49,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1021128.jpg",
@@ -8262,7 +8262,7 @@
       "quantity": 45,
       "category": "tv-i-videotehnika",
       "subcategory": "3d-ochki",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1021105.jpg",
@@ -8279,7 +8279,7 @@
       "quantity": 27,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/920485.jpg",
@@ -8312,7 +8312,7 @@
       "quantity": 21,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/918286.jpg",
@@ -8345,7 +8345,7 @@
       "quantity": 25,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/872115.jpg",
@@ -8378,7 +8378,7 @@
       "quantity": 65,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/872186.jpg",
@@ -8411,7 +8411,7 @@
       "quantity": 46,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1081152.jpg",
@@ -8444,7 +8444,7 @@
       "quantity": 6,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/909558.jpg",
@@ -8477,7 +8477,7 @@
       "quantity": 51,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1152722.jpg",
@@ -8510,7 +8510,7 @@
       "quantity": 22,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1239940.jpg",
@@ -8543,7 +8543,7 @@
       "quantity": 80,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1206960.jpg",
@@ -8576,7 +8576,7 @@
       "quantity": 49,
       "category": "tv-i-videotehnika",
       "subcategory": "ochki-virtualnoy-realnosti",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1249498.jpg",
@@ -8601,7 +8601,7 @@
       "quantity": 21,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1279508.jpg",
@@ -8634,7 +8634,7 @@
       "quantity": 85,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1246609.jpg",
@@ -8667,7 +8667,7 @@
       "quantity": 51,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/910564.jpg",
@@ -8700,7 +8700,7 @@
       "quantity": 52,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/913339.jpg",
@@ -8733,7 +8733,7 @@
       "quantity": 22,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/727800.jpg",
@@ -8766,7 +8766,7 @@
       "quantity": 81,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/659495.jpg",
@@ -8799,7 +8799,7 @@
       "quantity": 57,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1242002.jpg",
@@ -8832,7 +8832,7 @@
       "quantity": 47,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/967167.jpg",
@@ -8865,7 +8865,7 @@
       "quantity": 9,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1041462.jpg",
@@ -8890,7 +8890,7 @@
       "quantity": 27,
       "category": "tv-i-videotehnika",
       "subcategory": "proektsionnoe-oborudovanie",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1279437.jpg",
@@ -8915,7 +8915,7 @@
       "quantity": 46,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/553499.jpg",
@@ -8948,7 +8948,7 @@
       "quantity": 11,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/921320.jpg",
@@ -8981,7 +8981,7 @@
       "quantity": 5,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/855635.jpg",
@@ -9014,7 +9014,7 @@
       "quantity": 70,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/494673.jpg",
@@ -9035,7 +9035,7 @@
       "quantity": 74,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/552980.jpg",
@@ -9064,7 +9064,7 @@
       "quantity": 85,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/553454.jpg",
@@ -9097,7 +9097,7 @@
       "quantity": 82,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/1253516.jpg",
@@ -9130,7 +9130,7 @@
       "quantity": 63,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/391381.jpg",
@@ -9163,7 +9163,7 @@
       "quantity": 74,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/805174.jpg",
@@ -9196,7 +9196,7 @@
       "quantity": 2,
       "category": "tv-i-videotehnika",
       "subcategory": "videokamery-i-aksessuary",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/695343.jpg",
@@ -9229,7 +9229,7 @@
       "quantity": 59,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/205669.jpg",
@@ -9250,7 +9250,7 @@
       "quantity": 58,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/358288.jpg",
@@ -9283,7 +9283,7 @@
       "quantity": 37,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/730724.jpg",
@@ -9308,7 +9308,7 @@
       "quantity": 76,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/670780.jpg",
@@ -9341,7 +9341,7 @@
       "quantity": 39,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/794089.jpg",
@@ -9370,7 +9370,7 @@
       "quantity": 46,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": false,
+      "status": 0,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/167313.jpg",
@@ -9387,7 +9387,7 @@
       "quantity": 46,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/670829.jpg",
@@ -9416,7 +9416,7 @@
       "quantity": 68,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/615221.jpg",
@@ -9437,7 +9437,7 @@
       "quantity": 9,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/614579.jpg",
@@ -9466,7 +9466,7 @@
       "quantity": 41,
       "category": "tv-i-videotehnika",
       "subcategory": "dvd/blu-ray-pleery",
-      "status": true,
+      "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/614677.jpg",
@@ -37090,6 +37090,433 @@
       "createdAt": "2019-11-17T21:00:00.000Z",
       "user": "София Веселова",
       "phone": "(963)152-23-73"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "materinskaya-plata-asus-m5a78l-m-lx3",
+          "count": 2
+        },
+        {
+          "product": "detskiy-velosiped-babyhit-kids-tour",
+          "count": 1
+        }
+      ],
+      "totalCost": 204,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Леонид Воронцов",
+      "phone": "(984)039-05-77"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "ochki-virtualnoy-realnosti-vr-box-2",
+          "count": 3
+        },
+        {
+          "product": "varochnaya-poverhnost-lex-evh-320",
+          "count": 1
+        }
+      ],
+      "totalCost": 113,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Ульяна Ковалев",
+      "phone": "(999)972-09-67"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "plita-gefest-6100-03",
+          "count": 1
+        },
+        {
+          "product": "uborochnaya-mashina-karcher-fc-5-premium",
+          "count": 1
+        },
+        {
+          "product": "tv-antenna-remo-kolibri-dx-deluxe",
+          "count": 3
+        }
+      ],
+      "totalCost": 606,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Станислав Анисимова",
+      "phone": "(930)178-83-03"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "fen-viconte-vc-6726",
+          "count": 3
+        }
+      ],
+      "totalCost": 48,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Елена Логинов",
+      "phone": "(902)197-37-87"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "podstavka/kreplenie-kromax-ideal-4",
+          "count": 2
+        },
+        {
+          "product": "soska-(pustyshka)-baby-frank-204890",
+          "count": 1
+        },
+        {
+          "product": "3d-ochki-epson-elpgs03",
+          "count": 1
+        },
+        {
+          "product": "tv-antenna-remo-belka",
+          "count": 3
+        }
+      ],
+      "totalCost": 167,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Дарья Харитонов",
+      "phone": "(915)468-18-06"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "powerbank-akkumulyator-hiper-sp20000",
+          "count": 2
+        },
+        {
+          "product": "monitor-lg-24mp88hv",
+          "count": 1
+        },
+        {
+          "product": "tv-antenna-hama-44304",
+          "count": 1
+        }
+      ],
+      "totalCost": 235,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Ксения Лукина",
+      "phone": "(936)181-22-97"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "posudomoechnaya-mashina-bosch-sps-53e02",
+          "count": 1
+        },
+        {
+          "product": "plita-gefest-3200-08",
+          "count": 1
+        },
+        {
+          "product": "uborochnaya-mashina-karcher-fc-5",
+          "count": 1
+        }
+      ],
+      "totalCost": 713,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Алёна Самсонова",
+      "phone": "(977)985-75-75"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "proektor-lg-pf1000",
+          "count": 1
+        }
+      ],
+      "totalCost": 1228,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Ангелина Дьячков",
+      "phone": "(908)265-45-84"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "tv-tyuner-d-color-dc910hd",
+          "count": 1
+        },
+        {
+          "product": "dvd/blu-ray-pleer-sony-bdp-s6500",
+          "count": 1
+        },
+        {
+          "product": "uborochnaya-mashina-kitfort-kt-508",
+          "count": 1
+        },
+        {
+          "product": "videokamera-sony-fdr-ax53",
+          "count": 1
+        }
+      ],
+      "totalCost": 1089,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Аркадий Медведев",
+      "phone": "(939)832-76-86"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "podstavka/kreplenie-kromax-atlantis-45",
+          "count": 2
+        },
+        {
+          "product": "tv-tyuner-d-color-dc1501hd",
+          "count": 1
+        }
+      ],
+      "totalCost": 81,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Фёдор Кабанова",
+      "phone": "(971)510-80-10"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "proektor-lg-pf1000",
+          "count": 1
+        }
+      ],
+      "totalCost": 1228,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Алевтина Беляева",
+      "phone": "(973)924-54-67"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "utyug-delta-dl-710",
+          "count": 2
+        },
+        {
+          "product": "tv-antenna-remo-inter-2.0",
+          "count": 1
+        },
+        {
+          "product": "kuhonniy-kombayn-kenwood-kmc-570-chef-premier",
+          "count": 1
+        }
+      ],
+      "totalCost": 727,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Семён Селиверстов",
+      "phone": "(981)891-45-83"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "shkolniy-ryukzak-(ranets)-herlitz-smart-robot",
+          "count": 2
+        }
+      ],
+      "totalCost": 154,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Раиса Селезнев",
+      "phone": "(978)006-55-30"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "vinniy-shkaf-gastrorag-jc-128",
+          "count": 1
+        },
+        {
+          "product": "materinskaya-plata-asrock-z370-pro4",
+          "count": 1
+        },
+        {
+          "product": "proektor-optoma-uhd550x",
+          "count": 1
+        }
+      ],
+      "totalCost": 2611,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Валерий Смирнов",
+      "phone": "(958)734-99-81"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "mediapleer-upvel-um-514tv",
+          "count": 1
+        },
+        {
+          "product": "stiralnaya-mashina-bosch-wlg-20060",
+          "count": 1
+        }
+      ],
+      "totalCost": 249,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Денис Горшкова",
+      "phone": "(943)789-03-22"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "vinniy-shkaf-supra-trf-121wb",
+          "count": 1
+        },
+        {
+          "product": "plita-beko-css-48100",
+          "count": 1
+        },
+        {
+          "product": "morozilnaya-kamera-shivaki-fr-051",
+          "count": 1
+        }
+      ],
+      "totalCost": 500,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Антон Лебедева",
+      "phone": "(939)631-20-44"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "fen-polaris-phs-0803",
+          "count": 2
+        },
+        {
+          "product": "posudomoechnaya-mashina-candy-cdcp-6/e",
+          "count": 1
+        },
+        {
+          "product": "plita-gefest-5100-04",
+          "count": 1
+        },
+        {
+          "product": "ochki-virtualnoy-realnosti-vr-box-2",
+          "count": 3
+        }
+      ],
+      "totalCost": 539,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Леонид Никонова",
+      "phone": "(963)683-79-93"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "stiralnaya-mashina-bosch-wlg-20060",
+          "count": 1
+        }
+      ],
+      "totalCost": 229,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Геннадий Белоусов",
+      "phone": "(995)343-30-63"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "tv-antenna-one-for-all-sv-9385",
+          "count": 2
+        },
+        {
+          "product": "ochki-virtualnoy-realnosti-oculus-rift",
+          "count": 1
+        },
+        {
+          "product": "uborochnaya-mashina-karcher-fc-5",
+          "count": 1
+        }
+      ],
+      "totalCost": 1168,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Семён Карпов",
+      "phone": "(914)312-54-09"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "soska-(pustyshka)-philips-scf186/23",
+          "count": 3
+        },
+        {
+          "product": "kuler-dlya-vody-aqua-work-0.7-l",
+          "count": 1
+        },
+        {
+          "product": "vinniy-shkaf-supra-trf-121wb",
+          "count": 1
+        },
+        {
+          "product": "detskiy-velosiped-lexus-trike-racer-trike",
+          "count": 2
+        }
+      ],
+      "totalCost": 301,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Ирина Анисимов",
+      "phone": "(949)218-97-23"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "plita-gefest-3200-08",
+          "count": 1
+        }
+      ],
+      "totalCost": 138,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Матвей Ермаков",
+      "phone": "(909)346-57-95"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "posudomoechnaya-mashina-hansa-zwm-416",
+          "count": 1
+        },
+        {
+          "product": "wi-fi-adapter-xiaomi-mi-wifi-router-3g",
+          "count": 1
+        },
+        {
+          "product": "dvd/blu-ray-pleer-pioneer-bdp-180",
+          "count": 1
+        }
+      ],
+      "totalCost": 563,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Степан Евсеев",
+      "phone": "(970)729-92-12"
+    },
+    {
+      "id": 111,
+      "products": [
+        {
+          "product": "kuhonniy-kombayn-gemlux-gl-sm5g",
+          "count": 1
+        }
+      ],
+      "totalCost": 193,
+      "createdAt": "2019-11-18T21:00:00.000Z",
+      "user": "Василий Зайцев",
+      "phone": "(978)213-17-69"
     }
   ]
 }

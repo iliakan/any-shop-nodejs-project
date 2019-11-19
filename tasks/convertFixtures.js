@@ -71,7 +71,7 @@ module.exports = async function() {
         quantity:    faker.random.number({min: 1, max: 100}),
         category:    categorySlug,
         subcategory: subcategorySlug,
-        status:     faker.random.number({min: 1, max: 10}) !== 10,
+        status:     faker.random.number({min: 1, max: 10}) === 10 ? 0 : 1,
         images:      product['Ссылки на фото (через пробел)']
                        .split(' ')
                        .map(link => link.trim())

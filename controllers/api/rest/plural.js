@@ -24,19 +24,25 @@ module.exports = (db, name, opts) => {
   // GET /products?_embed=category,other
   async function list(ctx, next) {
 
-    await new Promise(resolve => setTimeout(resolve, 5000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     let filters = {
       lte(compareWith, getter, value) {
-        compareWith = new Date(compareWith);
-        compareWith.setHours(23, 59, 59, 999);
+        value = getter(value);
+        if (value instanceof Date) {
+          compareWith = new Date(compareWith);
+          compareWith.setHours(23, 59, 59, 999);
+        }
         // console.log("LOG", compareWith, value, getter(value));
-        return getter(value) <= compareWith;
+        return value <= compareWith;
       },
       gte(compareWith, getter, value) {
-        compareWith = new Date(compareWith);
-        compareWith.setHours(0, 0, 0, 0);
-        return getter(value) >= compareWith;
+        value = getter(value);
+        if (value instanceof Date) {
+          compareWith = new Date(compareWith);
+          compareWith.setHours(0, 0, 0, 0);
+        }
+        return value >= compareWith;
       },
       eq(match, getter, value) {
         return getter(value) == match;
@@ -45,6 +51,7 @@ module.exports = (db, name, opts) => {
         return getter(value) != match;
       },
       like(match, getter, value) {
+        // console.log(match, value, getter(value));
         return String(getter(value)).toLowerCase().includes(match.toLowerCase());
       }
     };
@@ -99,15 +106,21 @@ module.exports = (db, name, opts) => {
 
     let results = collection.slice();
     for(let i=0; i<results.length; i++) {
+      let result = results[i];
+      if (!result) continue; // filtered out by a previous filter run
       for(let filter of processingChain.filters) {
-        if (!filter(results[i])) {
+        if (!filter(result)) {
+          console.log("Removing", filter, result);
           results[i] = null;
+          break;
         }
       }
     }
 
+
     results = results.filter(Boolean);
 
+    // console.log(results.length, "BEFORE");
 
     for(let i = 0; i<processingChain.sortFields.length; i++) {
       let sortField = processingChain.sortFields[i];
@@ -120,11 +133,15 @@ module.exports = (db, name, opts) => {
         getter(a) == getter(b) ? 0  : -order);
     }
 
+    // console.log(results.length, "AFTER");
+
     if (processingChain.start !== null) {
       results = results.slice(processingChain.start, processingChain.end == null ? results.length : processingChain.end);
       ctx.set('X-Total-Count', results.length);
       ctx.append('Access-Control-Expose-Headers', 'X-Total-Count');
     }
+
+    // console.log(results.length, "AFTER");
 
     // before embedding copy objects, to avoid overwriting in db
     results = results.map(_.cloneDeep);
@@ -140,7 +157,6 @@ module.exports = (db, name, opts) => {
       }
     }
     ctx.body = results;
-
     await next();
   }
 

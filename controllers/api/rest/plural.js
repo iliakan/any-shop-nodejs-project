@@ -22,6 +22,7 @@ module.exports = (db, name, opts) => {
   // GET /products?_start=1&_end=10
   // GET /products?_sort=category.name,id&order=desc,asc
   // GET /products?_embed=category,other
+  // GET /categories?_refs=subcategory
   async function list(ctx, next) {
 
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -62,7 +63,8 @@ module.exports = (db, name, opts) => {
       sortOrder: [],
       start: null,
       end: null,
-      embed: []
+      embed: [],
+      refs: [] // not implemented, to embed items that reference each result, e.g. _refs=subcategory embeds subcategory where category=result id
     };
 
     let query = Object.assign({}, ctx.query);
@@ -100,6 +102,9 @@ module.exports = (db, name, opts) => {
         }
         if (operator === 'embed') {
           processingChain.embed = value.split(',');
+        }
+        if (operator === 'refs') {
+          processingChain.refs = value.split(',');
         }
       }
     }
@@ -156,7 +161,9 @@ module.exports = (db, name, opts) => {
         }
       }
     }
+
     ctx.body = results;
+
     await next();
   }
 

@@ -6,6 +6,7 @@ module.exports = [
       id:    {type: "string"},
       title: {type: "string"},
       count: {type: "number"},
+      // weight:   {type: "number"}
     },
     required:             ["id", "title", "count"],
     additionalProperties: false // other properties not allowed
@@ -16,6 +17,7 @@ module.exports = [
       id:       {type: "string"},
       title:    {type: "string"},
       count:    {type: "number"},
+      // weight:   {type: "number"},
       category: {type: "string"}
     },
     required:             ["id", "title", "count", "category"],
@@ -30,21 +32,21 @@ module.exports = [
       quantity:    {type: "number"},
       category:    {type: "string"},
       subcategory: {type: "string"},
-      status:     {type: "number"},
+      status:      {type: "number"},
       images:      {
-        type:  "array",
-        items: {
-          type: "object",
-          properties: {
-            source: { type: "string" },
-            url: { type: "string"}
+        type:        "array",
+        items:       {
+          type:                 "object",
+          properties:           {
+            source: {type: "string"},
+            url:    {type: "string"}
           },
           additionalProperties: false
         },
         uniqueItems: true
       },
       price:       {type: "number"},
-      discount:       {type: "number"}
+      discount:    {type: "number"}
     },
     required:             ["id", "title", "description", "quantity", "category", "subcategory", "status", "images", "price"],
     additionalProperties: false
@@ -53,16 +55,16 @@ module.exports = [
     type:                 "object",
     properties:           {
       id:        {type: "string"},
-      products: {
+      products:  {
         // array of products: [ {product:..., count:...}, ... ]
-        type:                 "array",
-        items:                {
-          type: "object",
-          properties: {
+        type:  "array",
+        items: {
+          type:                 "object",
+          properties:           {
             product: {
               type: "string",
             },
-            count: {
+            count:   {
               type: "number"
             }
           },
@@ -70,7 +72,7 @@ module.exports = [
           additionalProperties: false
         }
       },
-      totalCost:    {type: "number"},
+      totalCost: {type: "number"},
 //      createdAt: {type: "string", pattern: "^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d.\d{3}Z"},
       createdAt: {type: "string", format: "date-time"},
       user:      {type: "string"},

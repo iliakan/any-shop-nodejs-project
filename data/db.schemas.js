@@ -76,9 +76,10 @@ module.exports = [
 //      createdAt: {type: "string", pattern: "^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d.\d{3}Z"},
       createdAt: {type: "string", format: "date-time"},
       user:      {type: "string"},
-      phone:     {type: "string"}
+      phone:     {type: "string"},
+      delivery:  {type: "string"}
     },
-    required:             ["id", "product", "count", "amount", "createdAt", "user", "phone"],
+    required:             ["id", "product", "count", "amount", "createdAt", "user", "phone", "delivery"],
     additionalProperties: false
   }, {
     $id:        "https://javascript.info/schemas/db.json",

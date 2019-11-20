@@ -19,7 +19,7 @@ module.exports = async function() {
 
   db.set('orders', []);
 
-  let date = new Date(2019, 7);
+  let date = new Date(Date.now() - 90 * 86400e3); // creating orders for 90 days
   let id = 1;
   while (date < Date.now()) {
     let ordersCount = Math.round(graph(id));
@@ -38,7 +38,8 @@ module.exports = async function() {
         id,
         products,
         totalCost,
-        createdAt: new Date(date)
+        createdAt: new Date(date),
+        delivery: (date > Date.now() - 7 * 86400) ? 'In transit' : 'Delivered'
       };
 
       // 20% probability of an existing user to make the order again

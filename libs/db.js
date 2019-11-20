@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const Ajv = require('ajv');
+const pluralize = require('pluralize');
 
 const dbPath = path.join(__dirname, '../data/db.json');
 const schemaPath = path.join(__dirname, '../data/db.schemas.js');

@@ -13,7 +13,7 @@ module.exports = async function() {
     console.log("OK");
   }
 
-  validate = db.getValidate('product');
+  validate = db.getValidate('products');
 
   let res = validate({
     "id": "kolyaska-adamex-barletta-2-in-1",

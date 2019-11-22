@@ -1,6 +1,6 @@
 module.exports = [
   {
-    $id:                  "https://javascript.info/schemas/category.json",
+    $id:                  "https://javascript.info/schemas/categories.json",
     type:                 "object",
     properties:           {
       id:    {type: "string"},
@@ -11,7 +11,7 @@ module.exports = [
     required:             ["id", "title", "count"],
     additionalProperties: false // other properties not allowed
   }, {
-    $id:                  "https://javascript.info/schemas/subcategory.json",
+    $id:                  "https://javascript.info/schemas/subcategories.json",
     type:                 "object",
     properties:           {
       id:       {type: "string"},
@@ -23,7 +23,7 @@ module.exports = [
     required:             ["id", "title", "count", "category"],
     additionalProperties: false
   }, {
-    $id:                  "https://javascript.info/schemas/product.json",
+    $id:                  "https://javascript.info/schemas/products.json",
     type:                 "object",
     properties:           {
       id:          {type: "string"},
@@ -51,7 +51,7 @@ module.exports = [
     required:             ["id", "title", "description", "quantity", "category", "subcategory", "status", "images", "price"],
     additionalProperties: false
   }, {
-    $id:                  "https://javascript.info/schemas/order.json",
+    $id:                  "https://javascript.info/schemas/orders.json",
     type:                 "object",
     properties:           {
       id:        {type: "string"},
@@ -88,25 +88,25 @@ module.exports = [
       categories:    {
         type:  "array",
         items: {
-          $ref: "https://javascript.info/schemas/category.json",
+          $ref: "https://javascript.info/schemas/categories.json",
         }
       },
       subcategories: {
         type:  "array",
         items: {
-          $ref: "https://javascript.info/schemas/subcategory.json",
+          $ref: "https://javascript.info/schemas/subcategories.json",
         }
       },
       products:      {
         type:  "array",
         items: {
-          $ref: "https://javascript.info/schemas/product.json",
+          $ref: "https://javascript.info/schemas/products.json",
         }
       },
       orders:        {
         type:  "array",
         items: {
-          $ref: "https://javascript.info/schemas/order.json",
+          $ref: "https://javascript.info/schemas/orders.json",
         }
       }
     }

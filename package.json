@@ -12,6 +12,7 @@
   "author": "Ilya Kantor",
   "dependencies": {
     "@koa/cors": "^3.0.0",
+    "@koa/multer": "^2.0.1",
     "@koa/router": "^8",
     "ajv": "^6.10.2",
     "bunyan": "^1.8.12",
@@ -30,6 +31,7 @@
     "koa-send": "^5.0.0",
     "koa-static": "^5.0.0",
     "lru-cache": "^5.1.1",
+    "multer": "^1.4.2",
     "nodemon": "^1.19.4",
     "pluralize": "^8.0.0",
     "pug": "^2.0.4",

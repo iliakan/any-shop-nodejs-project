@@ -201,6 +201,7 @@ module.exports = (db, name, opts) => {
     }
 
     let validate = db.getValidate(collection);
+
     if (!validate(ctx.request.body)) {
       ctx.body = validate.errors;
       ctx.status = 400;
@@ -222,6 +223,8 @@ module.exports = (db, name, opts) => {
     if (!resource && ctx.request.method === 'PATCH') {
       ctx.throw(404, "No such item");
     }
+
+    console.log(ctx.request);
 
     let newResource = (ctx.request.method === 'PATCH') ? Object.assign(_.cloneDeep(resource), ctx.request.body) : ctx.request.body;
 

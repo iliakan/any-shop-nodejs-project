@@ -67,7 +67,7 @@ module.exports = async function() {
       let productObj = {
         id:          slug,
         title,
-        description: product['Описание'],
+        description: product['Описание'].replace(/<div rel="v:rating">.*<\/div>/, ''),
         quantity:    faker.random.number({min: 1, max: 100}),
         category:    categorySlug,
         subcategory: subcategorySlug,

@@ -20,14 +20,16 @@ module.exports = async function() {
   db.set('orders', []);
 
   let date = new Date(Date.now() - 90 * 86400e3); // creating orders for 90 days
+  date.setHours(9, 0, 0, 0);
+  let dateCounter = 1;
   let id = 1;
   while (date < Date.now()) {
-    let ordersCount = Math.round(graph(id));
+    let ordersCount = Math.round(graph(dateCounter));
     for (let j = 0; j < ordersCount; j++) {
       let productsCount = faker.random.number({min: 1, max: 4});
       let products = [];
       let totalCost = 0;
-      for(let i=0; i < productsCount; i++) {
+      for (let i = 0; i < productsCount; i++) {
         let product = db.get('products')[faker.random.number({max: db.get('products').length - 1})];
         let count = faker.random.number({min: 1, max: (product.price < 20) ? 3 : (product.price < 100) ? 2 : 1});
         totalCost += count * (product.price - product.discount);
@@ -39,11 +41,11 @@ module.exports = async function() {
         products,
         totalCost,
         createdAt: new Date(date),
-        delivery: (date > Date.now() - 7 * 86400) ? 'In transit' : 'Delivered'
+        delivery:  (date > Date.now() - 7 * 86400) ? 'In transit' : 'Delivered'
       };
 
       // 20% probability of an existing user to make the order again
-      if (db.get('orders').length > 5 && faker.random.number({min:1, max: 5}) === 1) {
+      if (db.get('orders').length > 5 && faker.random.number({min: 1, max: 5}) === 1) {
         let takeUserFromOrder = db.get('orders')[faker.random.number({min: 0, max: db.get('orders').length - 1})];
         order.user = takeUserFromOrder.user;
         order.phone = takeUserFromOrder.phone;
@@ -52,11 +54,13 @@ module.exports = async function() {
         order.phone = faker.phone.phoneNumber();
       }
 
-
       db.get('orders').push(order);
+      id++;
+      date.setMinutes(date.getMinutes() + 30);
     }
-    id++;
+
     date.setDate(date.getDate() + 1);
+    dateCounter++;
   }
 
   db.save();

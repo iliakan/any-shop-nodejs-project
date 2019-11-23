@@ -65,7 +65,7 @@ module.exports = (db, name, opts) => {
       start: null,
       end: null,
       embed: [],
-      refs: [] // not implemented, to embed items that reference each result, e.g. _refs=subcategory embeds subcategory where category=result id
+      refs: []
     };
 
     let query = Object.assign({}, ctx.query);
@@ -162,6 +162,22 @@ module.exports = (db, name, opts) => {
           // clone to avoid overwriting in db
           value[part] = _.cloneDeep(db.getById(pluralize(part), value[part]));
           value = value[part];
+        }
+      }
+    }
+
+    for(let refsField of processingChain.refs) {
+      for (let result of results) {
+        result[pluralize(refsField)] = [];
+        // category = { id: "detskie-tovary-i-igrushki", ... }
+        // subcategories = [{ category: ... }]
+        // refsField=subcategory
+        let subcategories = db.get(pluralize(refsField));
+        for(let subcategory of subcategories) {
+          console.log(subcategory, name);
+          if (subcategory[pluralize.singular(name)] == result.id) {
+            result[[pluralize(refsField)]].push(subcategory);
+          }
         }
       }
     }

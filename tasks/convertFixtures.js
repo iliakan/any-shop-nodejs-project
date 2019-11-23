@@ -10,7 +10,7 @@ const db = require('../libs/db');
 
 faker.seed(1);
 
-const PRODUCTS_PER_CATEGORY_MAX = 10;
+const productsByCategoryMax = Object.create(null);
 
 function makeSlug(str) {
   return transliterate(str.toLowerCase().replace(/ /g, '-'));
@@ -62,7 +62,12 @@ module.exports = async function() {
         categoryObj.children.push(subcategoryObj);
       }
 
-      if (subcategoryObj.count === PRODUCTS_PER_CATEGORY_MAX) continue;
+      if (!productsByCategoryMax[subcategoryObj.id]) {
+        productsByCategoryMax[subcategoryObj.id] = faker.random.number({min: 8, max: 20});
+      }
+      if (subcategoryObj.count >=  productsByCategoryMax[subcategoryObj.id]) {
+        continue;
+      }
 
       let productObj = {
         id:          slug,

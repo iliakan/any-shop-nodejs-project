@@ -2,6 +2,7 @@ const Router = require('@koa/router');
 const save = require('./save');
 const pluralize = require('pluralize');
 const _ = require('lodash');
+const transliterate = require('../../../libs/transliterate');
 
 module.exports = (db, name, opts) => {
   const router = new Router();
@@ -89,10 +90,10 @@ module.exports = (db, name, opts) => {
 
       if (field === '') {
         if (operator === 'sort') {
-          processingChain.sortFields = value.split(',');
+          processingChain.sortFields = Array.isArray(value) ? value : value.split(',');
         }
         if (operator === 'order') {
-          processingChain.sortOrder = value.split(',');
+          processingChain.sortOrder = Array.isArray(value) ? value : value.split(',');
         }
         if (operator === 'start') {
           processingChain.start = +value;
@@ -101,10 +102,10 @@ module.exports = (db, name, opts) => {
           processingChain.end = +value;
         }
         if (operator === 'embed') {
-          processingChain.embed = value.split(',');
+          processingChain.embed = Array.isArray(value) ? value : value.split(',');
         }
         if (operator === 'refs') {
-          processingChain.refs = value.split(',');
+          processingChain.refs = Array.isArray(value) ? value : value.split(',');
         }
       }
     }
@@ -151,13 +152,16 @@ module.exports = (db, name, opts) => {
     // before embedding copy objects, to avoid overwriting in db
     results = results.map(_.cloneDeep);
 
+    // http://localhost:8080/api/rest/products?_start=0&_end=30&_embed=subcategory.category
     for(let embedField of processingChain.embed) {
       for(let result of results) {
-        if (result[embedField])  {
-          // console.log(embedField, result[embedField]);
-
-          // product.category = (get value from db)
-          result[embedField] = db.getById(pluralize(embedField), result[embedField]);
+        let parts = embedField.split('.');
+        let value = result;
+        for(let part of parts) {
+          if (!(part in value)) continue;
+          // clone to avoid overwriting in db
+          value[part] = _.cloneDeep(db.getById(pluralize(part), value[part]));
+          value = value[part];
         }
       }
     }
@@ -220,13 +224,21 @@ module.exports = (db, name, opts) => {
 
     let resource = db.getById(name, id);
 
-    if (!resource && ctx.request.method === 'PATCH') {
-      ctx.throw(404, "No such item");
+    let newResource;
+
+    if (ctx.request.method === 'PATCH') {
+      if (!resource) {
+        ctx.throw(404, "No such item");
+      }
+      newResource = Object.assign(_.cloneDeep(resource), ctx.request.body);
+    } else {
+      newResource = ctx.request.body;
+      if (!newResource.id) {
+        // autogenerate id
+        newResource.id = transliterate(newResource.title);
+      }
     }
 
-    console.log(ctx.request);
-
-    let newResource = (ctx.request.method === 'PATCH') ? Object.assign(_.cloneDeep(resource), ctx.request.body) : ctx.request.body;
 
     let validate = db.getValidate(name);
 

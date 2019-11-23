@@ -69,7 +69,7 @@ module.exports = async function() {
         title,
         description: product['Описание'].replace(/<div rel="v:rating">.*<\/div>/, ''),
         quantity:    faker.random.number({min: 1, max: 100}),
-        category:    categorySlug,
+        // category:    categorySlug,
         subcategory: subcategorySlug,
         status:     faker.random.number({min: 1, max: 10}) === 10 ? 0 : 1,
         images:      product['Ссылки на фото (через пробел)']

@@ -30,7 +30,6 @@ module.exports = [
       title:       {type: "string"},
       description: {type: "string"},
       quantity:    {type: "number"},
-      category:    {type: "string"},
       subcategory: {type: "string"},
       status:      {type: "number"},
       images:      {
@@ -48,7 +47,7 @@ module.exports = [
       price:       {type: "number"},
       discount:    {type: "number"}
     },
-    required:             ["id", "title", "description", "quantity", "category", "subcategory", "status", "images", "price"],
+    required:             ["id", "title", "description", "quantity", "subcategory", "status", "images", "price"],
     additionalProperties: false
   }, {
     $id:                  "https://javascript.info/schemas/orders.json",

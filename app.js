@@ -8,6 +8,7 @@ const app = new Koa();
 app.context.db = require('./libs/db');
 app.log = require('./libs/log')();
 app.use(require('koa-static')(config.publicRoot));
+app.use(require('koa-bodyparser')());
 require('./handlers/requestId')(app);
 require('./handlers/requestLog')(app);
 require('./handlers/nocache')(app);

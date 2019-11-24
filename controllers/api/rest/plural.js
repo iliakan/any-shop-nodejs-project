@@ -281,7 +281,7 @@ module.exports = (db, name, opts) => {
       newResources.push(newResource);
     }
 
-    console.log("Saving", newResources);
+    // console.log("Saving", newResources);
 
     for(let newResource of newResources) {
       let index = collection.findIndex(r => r.id == newResource.id);

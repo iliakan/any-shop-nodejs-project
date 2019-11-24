@@ -103,11 +103,16 @@ module.exports = async function() {
 
   // convert category.children to subcategories
   let subcategories = [];
+  let categoryWeight = 1;
   for (let category of categories) {
+    category.weight = categoryWeight++;
+
     let children = category.children;
     delete category.children;
+    let subcategoryWeight = 1;
     for (let subcategory of children) {
       subcategory.category = category.id;
+      subcategory.weight = subcategoryWeight++;
       subcategories.push(subcategory);
     }
   }

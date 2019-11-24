@@ -6,9 +6,9 @@ module.exports = [
       id:    {type: "string"},
       title: {type: "string"},
       count: {type: "number"},
-      // weight:   {type: "number"}
+      weight:   {type: "number"}
     },
-    required:             ["id", "title", "count"],
+    required:             ["id", "title", "count", "weight"],
     additionalProperties: false // other properties not allowed
   }, {
     $id:                  "https://javascript.info/schemas/subcategories.json",
@@ -17,10 +17,10 @@ module.exports = [
       id:       {type: "string"},
       title:    {type: "string"},
       count:    {type: "number"},
-      // weight:   {type: "number"},
+      weight:   {type: "number"},
       category: {type: "string"}
     },
-    required:             ["id", "title", "count", "category"],
+    required:             ["id", "title", "count", "category", "weight"],
     additionalProperties: false
   }, {
     $id:                  "https://javascript.info/schemas/products.json",

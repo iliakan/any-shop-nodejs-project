@@ -3,6 +3,7 @@ const save = require('./save');
 const pluralize = require('pluralize');
 const _ = require('lodash');
 const transliterate = require('../../../libs/transliterate');
+const uuid = require('uuid/v4');
 
 module.exports = (db, name, opts) => {
   const router = new Router();
@@ -13,9 +14,9 @@ module.exports = (db, name, opts) => {
     .get('/', list)
     .post('/', create, save(db))
     .get('/:id', show)
-    .put('/:id', update, save(db))
-    .patch('/:id', update, save(db))
     .delete('/:id', destroy, save(db))
+    .put('/', update, save(db))
+    .patch('/', update, save(db))
     .routes();
 
   // GET /products
@@ -172,11 +173,14 @@ module.exports = (db, name, opts) => {
         // category = { id: "detskie-tovary-i-igrushki", ... }
         // subcategories = [{ category: ... }]
         // refsField=subcategory
-        let subcategories = db.get(pluralize(refsField));
-        for(let subcategory of subcategories) {
-          console.log(subcategory, name);
-          if (subcategory[pluralize.singular(name)] == result.id) {
-            result[[pluralize(refsField)]].push(subcategory);
+        let children = db.get(pluralize(refsField));
+        for(let child of children) {
+          // console.log(subcategory, name);
+          if (child[pluralize.singular(name)] == result.id) {
+            result[pluralize(refsField)].push(child);
+          }
+          if (children.length && children[0].weight) {
+            result[pluralize(refsField)].sort((a, b) => a.weight - b.weight);
           }
         }
       }
@@ -233,40 +237,64 @@ module.exports = (db, name, opts) => {
     return await next();
   }
 
-  // PUT /name/:id -> replaces (adds if not exists)
-  // PATCH /name/:id -> updates (errors if not exists)
+  // PUT /name -> replaces (adds if not exists)
+  // PATCH /name -> updates (errors if not exists)
   async function update(ctx, next) {
-    const id = ctx.params.id;
-
-    let resource = db.getById(name, id);
-
-    let newResource;
-
-    if (ctx.request.method === 'PATCH') {
-      if (!resource) {
-        ctx.throw(404, "No such item");
-      }
-      newResource = Object.assign(_.cloneDeep(resource), ctx.request.body);
-    } else {
-      newResource = ctx.request.body;
-      if (!newResource.id) {
-        // autogenerate id
-        newResource.id = transliterate(newResource.title);
-      }
-    }
-
+    let incomingResources = Array.isArray(ctx.request.body) ? ctx.request.body : [ctx.request.body];
 
     let validate = db.getValidate(name);
 
-    if (!validate(newResource)) {
-      ctx.body = validate.errors;
-      ctx.status = 400;
-      return await next();
+    let newResources = [];
+
+    for(let incomingResource of incomingResources) {
+      let newResource;
+      if (ctx.request.method === 'PATCH') {
+        if (!incomingResource.id) {
+          ctx.throw(404, "PATCH requires id");
+        }
+        let existingResource = db.getById(name, incomingResource.id);
+        if (!existingResource) {
+          ctx.throw(404, "No resource with such id: " + incomingResource.id);
+        }
+        newResource = Object.assign(_.cloneDeep(existingResource), incomingResource);
+      } else {
+        newResource = incomingResource;
+        if (!newResource.id) {
+          // autogenerate id
+          if (newResource.title) {
+            newResource.id = transliterate(newResource.title);
+          } else {
+            newResource.id = uuid();
+          }
+        }
+      }
+
+      if (!validate(newResource)) {
+        ctx.body = {
+          resource: incomingResource,
+          errors: validate.errors
+        };
+        ctx.status = 400;
+        return await next();
+      }
+
+      newResources.push(newResource);
     }
 
-    collection.splice(collection.indexOf(resource), 1, newResource);
+    console.log("Saving", newResources);
 
-    ctx.body = newResource;
+    for(let newResource of newResources) {
+      let index = collection.findIndex(r => r.id == newResource.id);
+
+      if (index !== -1) {
+        console.log("Replace", index, newResource);
+        collection.splice(index, 1, newResource);
+      } else {
+        collection.push(newResource);
+      }
+    }
+
+    ctx.body = Array.isArray(ctx.request.body) ? newResources : newResources[0];
 
     await next()
   }

@@ -3,27 +3,32 @@
     {
       "id": "detskie-tovary-i-igrushki",
       "title": "Детские товары и игрушки",
-      "count": 83
+      "count": 83,
+      "weight": 1
     },
     {
       "id": "kompyuternaya-tehnika",
       "title": "Компьютерная техника",
-      "count": 42
+      "count": 42,
+      "weight": 2
     },
     {
       "id": "krupnaya-bytovaya-tehnika",
       "title": "Крупная бытовая техника",
-      "count": 154
+      "count": 154,
+      "weight": 3
     },
     {
       "id": "melkaya-bytovaya-tehnika",
       "title": "Мелкая бытовая техника",
-      "count": 39
+      "count": 39,
+      "weight": 4
     },
     {
       "id": "tv-i-videotehnika",
       "title": "ТВ и видеотехника",
-      "count": 133
+      "count": 133,
+      "weight": 5
     }
   ],
   "subcategories": [
@@ -31,229 +36,267 @@
       "id": "progulki-i-detskaya-komnata",
       "title": "Прогулки и детская комната",
       "count": 13,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 2
     },
     {
       "id": "kormlenie-i-gigiena",
       "title": "Кормление и гигиена",
       "count": 18,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 1
     },
     {
       "id": "igrushki-i-razvlecheniya",
       "title": "Игрушки и развлечения",
       "count": 8,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 3
     },
     {
       "id": "aktivniy-otdyh-i-ulitsa",
       "title": "Активный отдых и улица",
       "count": 11,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 4
     },
     {
       "id": "radioupravlyaemye-modeli",
       "title": "Радиоуправляемые модели",
       "count": 17,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 6
     },
     {
       "id": "shkolnye-tovary",
       "title": "Школьные товары",
       "count": 16,
-      "category": "detskie-tovary-i-igrushki"
+      "category": "detskie-tovary-i-igrushki",
+      "weight": 5
     },
     {
       "id": "noutbuki-i-aksessuary",
       "title": "Ноутбуки и аксессуары",
       "count": 11,
-      "category": "kompyuternaya-tehnika"
+      "category": "kompyuternaya-tehnika",
+      "weight": 1
     },
     {
       "id": "monitory",
       "title": "Мониторы",
       "count": 11,
-      "category": "kompyuternaya-tehnika"
+      "category": "kompyuternaya-tehnika",
+      "weight": 2
     },
     {
       "id": "komplektuyuschie",
       "title": "Комплектующие",
       "count": 9,
-      "category": "kompyuternaya-tehnika"
+      "category": "kompyuternaya-tehnika",
+      "weight": 3
     },
     {
       "id": "setevoe-oborudovanie",
       "title": "Сетевое оборудование",
       "count": 11,
-      "category": "kompyuternaya-tehnika"
+      "category": "kompyuternaya-tehnika",
+      "weight": 4
     },
     {
       "id": "vstraivaemaya-tehnika",
       "title": "Встраиваемая техника",
       "count": 17,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 1
     },
     {
       "id": "stiralnye-mashiny",
       "title": "Стиральные машины",
       "count": 9,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 2
     },
     {
       "id": "sushilnye-mashiny",
       "title": "Сушильные машины",
       "count": 9,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 3
     },
     {
       "id": "holodilniki",
       "title": "Холодильники",
       "count": 13,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 4
     },
     {
       "id": "morozilnye-kamery",
       "title": "Морозильные камеры",
       "count": 14,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 5
     },
     {
       "id": "vinnye-shkafy",
       "title": "Винные шкафы",
       "count": 19,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 6
     },
     {
       "id": "vytyazhki",
       "title": "Вытяжки",
       "count": 4,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 7
     },
     {
       "id": "plity",
       "title": "Плиты",
       "count": 11,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 8
     },
     {
       "id": "posudomoechnye-mashiny",
       "title": "Посудомоечные машины",
       "count": 14,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 9
     },
     {
       "id": "melkaya-bytovaya-tehnika",
       "title": "Мелкая бытовая техника",
       "count": 14,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 10
     },
     {
       "id": "mikrovolnovye-pechi",
       "title": "Микроволновые печи",
       "count": 1,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 11
     },
     {
       "id": "elektroduhovki",
       "title": "Электродуховки",
       "count": 1,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 12
     },
     {
       "id": "uborochnye-mashiny",
       "title": "Уборочные машины",
       "count": 14,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 13
     },
     {
       "id": "paroochistiteli",
       "title": "Пароочистители",
       "count": 1,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 14
     },
     {
       "id": "kulery-i-purifayery",
       "title": "Кулеры и пурифайеры",
       "count": 13,
-      "category": "krupnaya-bytovaya-tehnika"
+      "category": "krupnaya-bytovaya-tehnika",
+      "weight": 15
     },
     {
       "id": "kuhnya",
       "title": "Кухня",
       "count": 19,
-      "category": "melkaya-bytovaya-tehnika"
+      "category": "melkaya-bytovaya-tehnika",
+      "weight": 1
     },
     {
       "id": "bytovye-pribory-dlya-doma",
       "title": "Бытовые приборы для дома",
       "count": 10,
-      "category": "melkaya-bytovaya-tehnika"
+      "category": "melkaya-bytovaya-tehnika",
+      "weight": 2
     },
     {
       "id": "krasota-i-gigiena",
       "title": "Красота и гигиена",
       "count": 10,
-      "category": "melkaya-bytovaya-tehnika"
+      "category": "melkaya-bytovaya-tehnika",
+      "weight": 3
     },
     {
       "id": "lcd-televizory",
       "title": "LCD телевизоры",
       "count": 13,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 1
     },
     {
       "id": "podstavki-i-krepleniya",
       "title": "Подставки и крепления",
       "count": 8,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 2
     },
     {
       "id": "mediapleery",
       "title": "Медиаплееры",
       "count": 19,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 3
     },
     {
       "id": "tv-tyunery",
       "title": "ТВ тюнеры",
       "count": 18,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 4
     },
     {
       "id": "tv-antenny",
       "title": "ТВ антенны",
       "count": 10,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 5
     },
     {
       "id": "3d-ochki",
       "title": "3D очки",
       "count": 10,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 6
     },
     {
       "id": "ochki-virtualnoy-realnosti",
       "title": "Очки виртуальной реальности",
       "count": 12,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 7
     },
     {
       "id": "proektsionnoe-oborudovanie",
       "title": "Проекционное оборудование",
       "count": 9,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 8
     },
     {
       "id": "videokamery-i-aksessuary",
       "title": "Видеокамеры и аксессуары",
       "count": 14,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 9
     },
     {
       "id": "dvd/blu-ray-pleery",
       "title": "DVD/Blu-ray плееры",
       "count": 20,
-      "category": "tv-i-videotehnika"
+      "category": "tv-i-videotehnika",
+      "weight": 10
     }
   ],
   "products": [
@@ -26552,6 +26595,342 @@
       "delivery": "Delivered",
       "user": "Егор Доронин",
       "phone": "(941)441-20-54"
+    },
+    {
+      "id": 730,
+      "products": [
+        {
+          "product": "videokamera-panasonic-hc-v380",
+          "count": 1
+        }
+      ],
+      "totalCost": 256,
+      "createdAt": "2019-11-24T10:30:00.000Z",
+      "delivery": "Delivered",
+      "user": "Лидия Щербакова",
+      "phone": "(923)057-76-03"
+    },
+    {
+      "id": 731,
+      "products": [
+        {
+          "product": "videokamera-sony-hdr-cx900e",
+          "count": 1
+        },
+        {
+          "product": "videokamera-panasonic-hc-v760",
+          "count": 1
+        },
+        {
+          "product": "tv-tyuner-d-color-dc911hd",
+          "count": 3
+        },
+        {
+          "product": "varochnaya-poverhnost-gefest-cbh-2120",
+          "count": 1
+        }
+      ],
+      "totalCost": 1734,
+      "createdAt": "2019-11-24T11:00:00.000Z",
+      "delivery": "Delivered",
+      "user": "Жанна Елисеева",
+      "phone": "(962)108-05-32"
+    },
+    {
+      "id": 732,
+      "products": [
+        {
+          "product": "mediapleer-apple-tv-4th-generation-32gb",
+          "count": 1
+        },
+        {
+          "product": "materinskaya-plata-msi-b350-pc-mate",
+          "count": 1
+        },
+        {
+          "product": "morozilnaya-kamera-biryusa-114-ca",
+          "count": 1
+        },
+        {
+          "product": "materinskaya-plata-gigabyte-z370p-d3",
+          "count": 1
+        }
+      ],
+      "totalCost": 577,
+      "createdAt": "2019-11-24T11:30:00.000Z",
+      "delivery": "Delivered",
+      "user": "Дарья Воронцов",
+      "phone": "(955)422-42-42"
+    },
+    {
+      "id": 733,
+      "products": [
+        {
+          "product": "lcd-televizor-samsung-ue-32j5205",
+          "count": 1
+        },
+        {
+          "product": "vinniy-shkaf-supra-trf-121wb",
+          "count": 1
+        }
+      ],
+      "totalCost": 449,
+      "createdAt": "2019-11-24T12:00:00.000Z",
+      "delivery": "Delivered",
+      "user": "Илья Федотов",
+      "phone": "(972)375-87-75"
+    },
+    {
+      "id": 734,
+      "products": [
+        {
+          "product": "ochki-virtualnoy-realnosti-bobovr-z4",
+          "count": 1
+        }
+      ],
+      "totalCost": 32,
+      "createdAt": "2019-11-24T12:30:00.000Z",
+      "delivery": "Delivered",
+      "user": "София Фомичева",
+      "phone": "(933)459-33-69"
+    },
+    {
+      "id": 735,
+      "products": [
+        {
+          "product": "detskiy-velosiped-lexus-trike-next",
+          "count": 2
+        },
+        {
+          "product": "dvd/blu-ray-pleer-bbk-dvp030s",
+          "count": 2
+        }
+      ],
+      "totalCost": 154,
+      "createdAt": "2019-11-24T13:00:00.000Z",
+      "delivery": "Delivered",
+      "user": "Александр Матвеев",
+      "phone": "(962)535-29-27"
+    },
+    {
+      "id": 736,
+      "products": [
+        {
+          "product": "videokamera-sony-hdr-cx900e",
+          "count": 1
+        }
+      ],
+      "totalCost": 1164,
+      "createdAt": "2019-11-24T13:30:00.000Z",
+      "delivery": "Delivered",
+      "user": "Степан Королев",
+      "phone": "(911)297-25-05"
+    },
+    {
+      "id": 737,
+      "products": [
+        {
+          "product": "mikrovolnovaya-pech-willmark-wmo-207dh",
+          "count": 1
+        },
+        {
+          "product": "plita-gefest-6560-03",
+          "count": 1
+        },
+        {
+          "product": "tv-antenna-bbk-da15",
+          "count": 2
+        }
+      ],
+      "totalCost": 511,
+      "createdAt": "2019-11-24T14:00:00.000Z",
+      "delivery": "Delivered",
+      "user": "Светлана Наумова",
+      "phone": "(968)082-12-68"
+    },
+    {
+      "id": 738,
+      "products": [
+        {
+          "product": "plita-gefest-3200-08",
+          "count": 1
+        },
+        {
+          "product": "shkolniy-ryukzak-(ranets)-herlitz-super-racer",
+          "count": 1
+        },
+        {
+          "product": "uborochnaya-mashina-hobot-198",
+          "count": 1
+        }
+      ],
+      "totalCost": 516,
+      "createdAt": "2019-11-24T14:30:00.000Z",
+      "delivery": "In transit",
+      "user": "Арсений Чернова",
+      "phone": "(921)886-86-71"
+    },
+    {
+      "id": 739,
+      "products": [
+        {
+          "product": "soska-(pustyshka)-happy-baby-15041",
+          "count": 2
+        },
+        {
+          "product": "materinskaya-plata-asrock-h81-pro-btc-r2.0",
+          "count": 1
+        }
+      ],
+      "totalCost": 102,
+      "createdAt": "2019-11-24T15:00:00.000Z",
+      "delivery": "In transit",
+      "user": "Елизавета Пономарев",
+      "phone": "(995)137-22-81"
+    },
+    {
+      "id": 740,
+      "products": [
+        {
+          "product": "vinniy-shkaf-liebherr-wkb-1812",
+          "count": 1
+        },
+        {
+          "product": "varochnaya-poverhnost-bosch-pcp-615-b90e",
+          "count": 1
+        }
+      ],
+      "totalCost": 1107,
+      "createdAt": "2019-11-24T15:30:00.000Z",
+      "delivery": "In transit",
+      "user": "Анна Карпова",
+      "phone": "(930)207-32-33"
+    },
+    {
+      "id": 741,
+      "products": [
+        {
+          "product": "soska-(pustyshka)-nuk-10725981",
+          "count": 1
+        },
+        {
+          "product": "tv-tyuner-d-color-dc1501hd",
+          "count": 2
+        },
+        {
+          "product": "3d-ochki-sony-tdg-bt500a",
+          "count": 1
+        }
+      ],
+      "totalCost": 123,
+      "createdAt": "2019-11-24T16:00:00.000Z",
+      "delivery": "In transit",
+      "user": "Татьяна Мухин",
+      "phone": "(928)657-28-22"
+    },
+    {
+      "id": 742,
+      "products": [
+        {
+          "product": "morozilnaya-kamera-saratov-170",
+          "count": 1
+        }
+      ],
+      "totalCost": 227,
+      "createdAt": "2019-11-24T16:30:00.000Z",
+      "delivery": "In transit",
+      "user": "Анфиса Воронов",
+      "phone": "(970)671-74-89"
+    },
+    {
+      "id": 743,
+      "products": [
+        {
+          "product": "powerbank-akkumulyator-xiaomi-mi-power-bank-10000",
+          "count": 1
+        },
+        {
+          "product": "materinskaya-plata-asrock-z370-pro4",
+          "count": 1
+        },
+        {
+          "product": "vinniy-shkaf-tesler-wcv-080",
+          "count": 1
+        },
+        {
+          "product": "tv-tyuner-d-color--dc1302hd",
+          "count": 1
+        }
+      ],
+      "totalCost": 284,
+      "createdAt": "2019-11-24T17:00:00.000Z",
+      "delivery": "In transit",
+      "user": "Нина Тихонова",
+      "phone": "(928)595-83-32"
+    },
+    {
+      "id": 744,
+      "products": [
+        {
+          "product": "sokovyzhimalka-delta-dl-0223",
+          "count": 1
+        }
+      ],
+      "totalCost": 36,
+      "createdAt": "2019-11-24T17:30:00.000Z",
+      "delivery": "In transit",
+      "user": "Елена Тихонов",
+      "phone": "(965)034-99-51"
+    },
+    {
+      "id": 745,
+      "products": [
+        {
+          "product": "ochki-virtualnoy-realnosti-vr-box-2",
+          "count": 3
+        },
+        {
+          "product": "powerbank-akkumulyator-hiper-sp20000",
+          "count": 1
+        }
+      ],
+      "totalCost": 48,
+      "createdAt": "2019-11-24T18:00:00.000Z",
+      "delivery": "In transit",
+      "user": "Жанна Данилов",
+      "phone": "(959)822-15-34"
+    },
+    {
+      "id": 746,
+      "products": [
+        {
+          "product": "tv-tyuner-d-color-dc910hd",
+          "count": 1
+        }
+      ],
+      "totalCost": 11,
+      "createdAt": "2019-11-24T18:30:00.000Z",
+      "delivery": "In transit",
+      "user": "Альберт Калинин",
+      "phone": "(979)547-18-80"
+    },
+    {
+      "id": 747,
+      "products": [
+        {
+          "product": "shkolniy-ryukzak-(ranets)-scooli-fairy-fa13823",
+          "count": 1
+        },
+        {
+          "product": "powerbank-akkumulyator-remax-proda-power-box-20000",
+          "count": 2
+        }
+      ],
+      "totalCost": 80,
+      "createdAt": "2019-11-24T19:00:00.000Z",
+      "delivery": "In transit",
+      "user": "Лука Миронов",
+      "phone": "(986)861-85-29"
     }
   ]
 }

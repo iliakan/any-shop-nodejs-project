@@ -287,7 +287,6 @@ module.exports = (db, name, opts) => {
       let index = collection.findIndex(r => r.id == newResource.id);
 
       if (index !== -1) {
-        console.log("Replace", index, newResource);
         collection.splice(index, 1, newResource);
       } else {
         collection.push(newResource);

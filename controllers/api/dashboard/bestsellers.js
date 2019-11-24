@@ -35,13 +35,12 @@ module.exports = async (ctx) => {
     getter(a) > getter(b) ? order :
       getter(a) == getter(b) ? 0 : -order);
 
-  console.log(productsTop);
   let results = [];
   for(let [id, salesCount] of productsTop) {
     let product = _.cloneDeep(ctx.db.getById('products', id));
     product.sales = salesCount;
-    product.subcategory = ctx.db.getById('subcategories', product.subcategory);
-    product.category = ctx.db.getById('categories', product.category);
+    product.subcategory = _.cloneDeep(ctx.db.getById('subcategories', product.subcategory));
+    product.subcategory.category = ctx.db.getById('categories', product.subcategory.category);
     results.push(product);
   }
 

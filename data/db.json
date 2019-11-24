@@ -107,14 +107,14 @@
       "title": "Встраиваемая техника",
       "count": 17,
       "category": "krupnaya-bytovaya-tehnika",
-      "weight": 1
+      "weight": 2
     },
     {
       "id": "stiralnye-mashiny",
       "title": "Стиральные машины",
       "count": 9,
       "category": "krupnaya-bytovaya-tehnika",
-      "weight": 2
+      "weight": 1
     },
     {
       "id": "sushilnye-mashiny",
@@ -9715,22 +9715,22 @@
     {
       "id": "tv-tyuner-d-color--dc1301hd",
       "title": "ТВ тюнер D-COLOR  DC1301HD",
-      "description": "Габариты (мм): 132х32х100; Пульт ДУ; USB; HDMI: 1 шт; композитный; Телетекст; Телегид; Time shift; Запись видео; Разрешение видео: 576i, 576p, 720p, 1080i, 1080p; DVB-T2 (эфирное); DVB-T (эфирное); Тип: внешний тюнер ",
-      "quantity": 90,
+      "description": "ТВ тюнер D-COLOR  DC1301HD",
       "subcategory": "tv-tyunery",
+      "price": 15,
+      "quantity": 90,
+      "discount": 0,
       "status": 1,
       "images": [
         {
-          "url": "http://magazilla.ru/jpg_zoom1/472608.jpg",
-          "source": "472608.jpg"
-        },
-        {
           "url": "http://mzimg.com/big/y1/ellhimqz1y1.jpg",
           "source": "ellhimqz1y1.jpg"
+        },
+        {
+          "url": "http://magazilla.ru/jpg_zoom1/472608.jpg",
+          "source": "472608.jpg"
         }
-      ],
-      "price": 15,
-      "discount": 0
+      ]
     },
     {
       "id": "tv-tyuner-bbk-smp016hdt2",
@@ -10279,18 +10279,18 @@
     {
       "id": "3d-ochki-optoma-zd301",
       "title": "3D очки Optoma ZD301",
-      "description": "Использование с обычными очками; Время работы (ч): 15; Индикатор состояния батареи; Включение: ручное; для проектора; Размер: стандартный (L); Тип: активные",
-      "quantity": 17,
+      "description": "3D очки Optoma ZD301",
       "subcategory": "3d-ochki",
+      "price": 119,
+      "quantity": 17,
+      "discount": 0,
       "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/314571.jpg",
           "source": "314571.jpg"
         }
-      ],
-      "price": 119,
-      "discount": 0
+      ]
     },
     {
       "id": "3d-ochki-sim2-visus-rf-7",

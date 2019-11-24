@@ -27,7 +27,7 @@ module.exports = (db, name, opts) => {
   // GET /categories?_refs=subcategory
   async function list(ctx, next) {
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // await new Promise(resolve => setTimeout(resolve, 1000));
 
     let filters = {
       lte(compareWith, getter, value) {
@@ -117,7 +117,7 @@ module.exports = (db, name, opts) => {
       if (!result) continue; // filtered out by a previous filter run
       for(let filter of processingChain.filters) {
         if (!filter(result)) {
-          console.log("Removing", filter, result);
+          // console.log("Removing", filter, result);
           results[i] = null;
           break;
         }

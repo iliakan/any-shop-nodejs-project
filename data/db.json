@@ -10183,18 +10183,18 @@
     {
       "id": "3d-ochki-epson-elpgs03",
       "title": "3D очки Epson ELPGS03",
-      "description": "Использование с обычными очками; Время работы (ч): 40; Индикатор состояния батареи; Включение: ручное; для проектора; Размер: стандартный (L); Тип: активные",
+      "description": "3D очки Epson ELPGS03",
+      "subcategory": "elektroduhovki",
+      "price": 91,
       "quantity": 16,
-      "subcategory": "3d-ochki",
+      "discount": 0,
       "status": 1,
       "images": [
         {
           "url": "http://magazilla.ru/jpg_zoom1/246743.jpg",
           "source": "246743.jpg"
         }
-      ],
-      "price": 91,
-      "discount": 0
+      ]
     },
     {
       "id": "3d-ochki-samsung-ssg-5100gb",

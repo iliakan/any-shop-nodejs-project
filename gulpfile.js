@@ -21,5 +21,4 @@ task('livereload', require('./tasks/livereload').bind(null, {
 task('dev', parallel('nodemon', 'livereload'));
 task('fixtures', series('convertFixtures', 'generateOrders'));
 
-
 // task('validateDb', require('./tasks/validateDb'));

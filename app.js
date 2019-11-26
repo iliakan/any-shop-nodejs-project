@@ -30,6 +30,7 @@ router.get('/dashboard/orders', require('./controllers/api/dashboard/orders'));
 router.get('/dashboard/sales', require('./controllers/api/dashboard/sales'));
 router.get('/dashboard/customers', require('./controllers/api/dashboard/customers'));
 router.get('/dashboard/bestsellers', require('./controllers/api/dashboard/bestsellers'));
+router.get('/reload', require('./controllers/api/reload'));
 router.use('/rest', require('./controllers/api/rest')(app.context.db));
 app.use(router.routes());
 

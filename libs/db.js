@@ -58,7 +58,9 @@ class Db {
   }
 
   save() {
-    fs.writeFileSync(this.filePath, this.serialize(this.data));
+    if (!process.env.DB_SAVE_DISABLED) {
+      fs.writeFileSync(this.filePath, this.serialize(this.data));
+    }
   }
 
   deserialize(json) {

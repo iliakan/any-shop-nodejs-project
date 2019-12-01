@@ -13,8 +13,8 @@ module.exports = {
       PORT:                        80,
       NODE_ENV:                    "production",
       PM2_GRACEFUL_LISTEN_TIMEOUT: 1000,
-      PM2_GRACEFUL_TIMEOUT:        5000
+      PM2_GRACEFUL_TIMEOUT:        5000,
+      DB_SAVE_DISABLED:            true
     }
   }]
 };
-

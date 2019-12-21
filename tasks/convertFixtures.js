@@ -4,7 +4,7 @@ const path = require('path');
 const transliterate = require('../libs/transliterate');
 const faker = require('faker');
 const dataDir = path.resolve(__dirname, '../data');
-const originalDataDir = path.resolve(__dirname, '../original_daga');
+const originalDataDir = path.resolve(__dirname, '../original_data');
 const files = fs.readdirSync(originalDataDir);
 
 const db = require('../libs/db');

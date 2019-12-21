@@ -4,7 +4,7 @@ const Ajv = require('ajv');
 const pluralize = require('pluralize');
 
 const dbPath = path.join(__dirname, '../data/db.json');
-const schemaPath = path.join(__dirname, '../data/db.schemas.js');
+const schemaPath = path.join(__dirname, '../db.schemas.js');
 
 class Db {
 

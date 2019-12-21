@@ -4,7 +4,8 @@ const path = require('path');
 const transliterate = require('../libs/transliterate');
 const faker = require('faker');
 const dataDir = path.resolve(__dirname, '../data');
-const files = fs.readdirSync(path.join(dataDir, 'original_data'));
+const originalDataDir = path.resolve(__dirname, '../original_daga');
+const files = fs.readdirSync(originalDataDir);
 
 const db = require('../libs/db');
 
@@ -29,7 +30,7 @@ module.exports = async function() {
 
     console.log(`processing ${file} ...`);
 
-    const workbook = XLSX.readFile(path.join(dataDir, 'original_data', file));
+    const workbook = XLSX.readFile(path.resolve(originalDataDir, file));
     const sheet_name = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[sheet_name];
 

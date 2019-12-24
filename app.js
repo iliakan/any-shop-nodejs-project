@@ -15,7 +15,7 @@ require('./handlers/nocache')(app);
 require('./handlers/error')(app);
 
 // uncomment to enable CORS from anywhere
-// app.use(require('@koa/cors')({maxAge: 86400}));
+app.use(require('@koa/cors')({maxAge: 86400}));
 
 app.use(async (ctx, next) => {
   if (!ctx.url.includes('.') && !ctx.url.startsWith('/api')) {

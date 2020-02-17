@@ -12,7 +12,7 @@ module.exports = async function() {
   } else {
     console.log("OK");
   }
-
+/*
   validate = db.getValidate('products');
 
   let res = validate({
@@ -34,6 +34,6 @@ module.exports = async function() {
   });
 
   console.log(validate.errors);
-
+*/
 };
 

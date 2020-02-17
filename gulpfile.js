@@ -7,7 +7,8 @@ process.on('uncaughtException', function(err) {
   process.exit(255);
 });
 
-task('convertFixtures', require('./tasks/convertFixtures'));
+task("convertFixturesOld", require("./tasks/convertFixturesOld"));
+task("convertProducts", require("./tasks/convertProducts"));
 
 task('server', require('./tasks/server'));
 task('generateOrders', require('./tasks/generateOrders'));
@@ -19,6 +20,7 @@ task('livereload', require('./tasks/livereload').bind(null, {
 }));
 
 task('dev', parallel('nodemon', 'livereload'));
-task('fixtures', series('convertFixtures', 'generateOrders'));
 
-task('validateDb', require('./tasks/validateDb'));
+task("validateDb", require("./tasks/validateDb"));
+
+task('buildDb', series('convertProducts', 'generateOrders', 'validateDb'));

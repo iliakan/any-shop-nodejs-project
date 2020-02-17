@@ -39,7 +39,7 @@ module.exports = async function() {
   // make categories
   for (let category of Object.values(categories)) {
     if (category.depth == 0) {
-      if (category.slug != "markdown" && category.slug != "dorabotka") {
+      if (category.slug != "markdown" && category.slug != "dorabotka" && category.slug != 'uslugi') {
         if (ids.has(category.slug)) {
           console.error("Duplicate id", category.slug);
           process.exit(1);
@@ -136,8 +136,10 @@ module.exports = async function() {
     let subcategory = db.subcategories.find(c => c.id == subcategorySlug);
 
     if (!category) {
-      console.error(product);
-      throw new Error("No category: " + categoryId);
+      // we ignore this category (e.g. uslugi)
+      continue;
+      //console.error(product);
+      //throw new Error("No category: " + categoryId);
     }
 
     if (!subcategory) {

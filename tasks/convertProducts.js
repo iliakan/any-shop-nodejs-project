@@ -112,6 +112,8 @@ module.exports = async function() {
     }
     // console.log(product);
 
+    if (!product.price || !product.description) continue;
+
     if (productById[product.id]) {
       console.error("DUPLICATE ID", product);
       throw new Error("Duplicate id");
@@ -169,7 +171,7 @@ module.exports = async function() {
       price: product.price,
       discount:
         product.price > 1000 && faker.random.number({ min: 1, max: 5 }) === 1
-          ? product.price / 10
+          ? Math.floor(product.price / 10)
           : 0
     });
 
